@@ -4048,7 +4048,7 @@ body div#content.sub section.sub-contents div.container div.grow-area div.grow-t
 }
 
 body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td > a {
-  color: #029AD4;
+  color: #029ad4;
 }
 
 body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td > a::after {
@@ -4106,11 +4106,11 @@ body div#content.sub section.sub-contents div.container div.notice-weather {
 
 body div#content.sub section.sub-contents div.container div.notice-weather > strong {
   font-size: 16px;
+  width: 100px;
 }
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.notice-weather > strong {
-    width: 100px;
     font-size: 18px;
     margin: 20px;
   }
@@ -4124,11 +4124,11 @@ body div#content.sub section.sub-contents div.container div.notice-weather .news
 body div#content.sub section.sub-contents div.container div.notice-weather span {
   font-size: 14px;
   font-weight: 600;
+  width: 100px;
 }
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.notice-weather span {
-    width: 100px;
     font-size: 16px;
     margin-right: 20px;
   }
@@ -4155,7 +4155,7 @@ body div#content.sub section.sub-contents div.container div.notice-weather span.
   body div#content.sub section.sub-contents div.container div.select-box2 {
     margin-top: 25px;
     padding: 20px 40px 30px;
-    border: 1px solid #C2CDD9;
+    border: 1px solid #c2cdd9;
     border-bottom: none;
     position: relative;
   }
@@ -4238,7 +4238,7 @@ body div#content.sub section.sub-contents div.container div.select-box2 div.btn-
   background: #999999;
   border-radius: 6px;
   border: none;
-  width: calc(100%/3 - 10px);
+  width: calc(100% / 3 - 10px);
   height: 44px;
 }
 
@@ -4256,8 +4256,8 @@ body div#content.sub section.sub-contents div.container div.select-box2 div.btn-
 body div#content.sub section.sub-contents div.container .graph-area {
   display: none;
   margin-bottom: 26px;
-  border: 1px solid #C2CDD9;
-  background: #EEF2F7;
+  border: 1px solid #c2cdd9;
+  background: #eef2f7;
   width: 100%;
   height: 337px;
   padding: 20px 20px 40px;
@@ -4322,7 +4322,7 @@ body div#content.sub section.sub-contents div.container .graph-area .graph-txt >
   width: 7px;
   height: 7px;
   display: inline-block;
-  background: #D59B36;
+  background: #d59b36;
   border-radius: 50%;
   margin-bottom: 2px;
   margin-right: 5px;
@@ -4333,7 +4333,7 @@ body div#content.sub section.sub-contents div.container .graph-area .graph-txt >
   width: 7px;
   height: 7px;
   display: inline-block;
-  background: #279A27;
+  background: #279a27;
   border-radius: 50%;
   margin-bottom: 2px;
   margin-right: 5px;
@@ -4344,7 +4344,7 @@ body div#content.sub section.sub-contents div.container .graph-area .graph-txt >
   width: 7px;
   height: 7px;
   display: inline-block;
-  background: #445C78;
+  background: #445c78;
   border-radius: 50%;
   margin-bottom: 2px;
   margin-right: 5px;
@@ -4352,7 +4352,7 @@ body div#content.sub section.sub-contents div.container .graph-area .graph-txt >
 
 body div#content.sub section.sub-contents div.container .graph-area .graph-txt > span.on {
   font-weight: 600;
-  border-bottom: 2px solid #029AD4;
+  border-bottom: 2px solid #029ad4;
 }
 
 body div#content.sub section.sub-contents div.container div.board-tools {
