@@ -2222,7 +2222,7 @@ body header .container button.main-menu i {
   body nav#main-menu {
     display: inline-block;
     width: 100%;
-    background: #029AD4;
+    background: #029ad4;
   }
   body nav#main-menu h2 {
     display: none;
@@ -2280,7 +2280,7 @@ body div#content.main section.main-issue {
 }
 
 body div#content.main section.main-issue::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -2364,7 +2364,7 @@ body div#content.main section.main-issue div.container div.select-box button {
 body div#content.main section.main-issue div.container div.select-box button.search {
   width: calc(100% - 115px);
   margin-right: 5px;
-  background: #3DA700;
+  background: #3da700;
 }
 
 @media (min-width: 1200px) {
@@ -2377,7 +2377,7 @@ body div#content.main section.main-issue div.container div.select-box button.sea
 
 body div#content.main section.main-issue div.container div.select-box button.add {
   width: 110px;
-  background: #AC5C00;
+  background: #ac5c00;
 }
 
 @media (min-width: 1200px) {
@@ -2412,7 +2412,7 @@ body div#content.main section.main-issue div.container div.temperature strong {
 }
 
 body div#content.main section.main-issue div.container div.temperature strong::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 18.4px;
   height: 46px;
@@ -2682,7 +2682,7 @@ body div#content.main section.main-issue div.container div.main-swiper button i 
 body div#content.main section.main-info {
   position: relative;
   text-align: center;
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
 @media (min-width: 1200px) {
@@ -2818,7 +2818,7 @@ body div#content.main section.main-info div.container div.tab-outline div.tab-da
 
 body div#content.main section.main-info div.container div.tab-outline p.info {
   font-size: 14px;
-  color: #029AD4;
+  color: #029ad4;
   margin: 10px 0 20px;
 }
 
@@ -3035,7 +3035,7 @@ body div#content.sub section.sub-contents {
 }
 
 body div#content.sub section.sub-contents div.container h3.stitle {
-  background: #EEEEEE;
+  background: #eeeeee;
   margin: 0 -15px 30px;
   padding: 24px 0;
   text-align: center;
@@ -3083,7 +3083,7 @@ body div#content.sub section.sub-contents div.container h4.btitle {
 
 body div#content.sub section.sub-contents div.container h4.btitle strong {
   font-weight: 600;
-  color: #0063AE;
+  color: #0063ae;
 }
 
 body div#content.sub section.sub-contents div.container h4.btitle small {
@@ -3226,7 +3226,7 @@ body div#content.sub section.sub-contents div.container div.weather-head div.out
 
 body div#content.sub section.sub-contents div.container div.weather-head div.outline div.select-box button.search {
   margin-right: 5px;
-  background: #3DA700;
+  background: #3da700;
 }
 
 @media (min-width: 1200px) {
@@ -3238,7 +3238,7 @@ body div#content.sub section.sub-contents div.container div.weather-head div.out
 }
 
 body div#content.sub section.sub-contents div.container div.weather-head div.outline div.select-box button.add {
-  background: #AC5C00;
+  background: #ac5c00;
   margin-right: 5px;
 }
 
@@ -3268,7 +3268,7 @@ body div#content.sub section.sub-contents div.container div.weather-head div.out
 }
 
 body div#content.sub section.sub-contents div.container div.weather-head div.outline div.location {
-  background: #EEEEEE;
+  background: #eeeeee;
   font-size: 16px;
   text-align: left;
   padding: 10px;
@@ -3313,7 +3313,7 @@ body div#content.sub section.sub-contents div.container div.weather-head div.tem
   display: inline-block;
   width: 100%;
   position: relative;
-  background: #EEF2F7;
+  background: #eef2f7;
   border: 1px solid #ccc;
 }
 
@@ -3356,7 +3356,7 @@ body div#content.sub section.sub-contents div.container div.weather-head div.tem
 }
 
 body div#content.sub section.sub-contents div.container div.weather-head div.temperature-outline div.temperature strong::before {
-  content: "";
+  content: '';
   display: inline-block;
   position: relative;
   top: 4px;
@@ -3575,12 +3575,12 @@ body div#content.sub section.sub-contents div.container div.table-outline {
 
 body div#content.sub section.sub-contents div.container div.table-outline table {
   width: 100%;
-  border-top: 2px solid #029AD4;
+  border-top: 2px solid #029ad4;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table thead tr th {
   height: 52px;
-  background: #EEEEEE;
+  background: #eeeeee;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -3612,7 +3612,7 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.frost::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -3623,15 +3623,15 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.frost.frost01::before {
-  background: #086CC3;
+  background: #086cc3;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.frost.frost02::before {
-  background: #FF9100;
+  background: #ff9100;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.frost.frost03::before {
-  background: #FF2900;
+  background: #ff2900;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.status {
@@ -3640,7 +3640,7 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.status::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -3651,15 +3651,15 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.status.status01::before {
-  background: #086CC3;
+  background: #086cc3;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.status.status02::before {
-  background: #FF9100;
+  background: #ff9100;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td.status.status03::before {
-  background: #FF2900;
+  background: #ff2900;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td i {
@@ -3669,11 +3669,11 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td i.bxs-sun {
-  color: #FFB727;
+  color: #ffb727;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td i.bxs-up-arrow-alt {
-  color: #437DEA;
+  color: #437dea;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td i.bxs-up-arrow-alt.nne {
@@ -3752,11 +3752,11 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td span {
-  color: #0063AE;
+  color: #0063ae;
 }
 
 body div#content.sub section.sub-contents div.container div.table-outline table tbody tr td span.high {
-  color: #F60000;
+  color: #f60000;
 }
 
 @media (min-width: 1200px) {
@@ -3775,7 +3775,7 @@ body div#content.sub section.sub-contents div.container div.table-outline table 
 }
 
 body div#content.sub section.sub-contents div.container div.weather-tabs {
-  background: #029AD4;
+  background: #029ad4;
   padding: 10px;
 }
 
@@ -3791,7 +3791,7 @@ body div#content.sub section.sub-contents div.container div.weather-tabs button 
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media (min-width: 1200px) {
@@ -3842,6 +3842,506 @@ body div#content.sub section.sub-contents div.container div.share button.faceboo
 
 body div#content.sub section.sub-contents div.container div.share button.kakaotalk {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45.456' height='45.456' viewBox='0 0 45.456 45.456'%3E%3Cg transform='translate(0)'%3E%3Crect width='45.456' height='45.456' transform='translate(0)' fill='%23f9e000'/%3E%3Cpath d='M36.46,27.876c-8.981,0-16.262,5.755-16.262,12.856,0,4.621,3.085,8.672,7.715,10.938-.34,1.269-1.232,4.6-1.41,5.312-.221.884.323.873.68.636.28-.187,4.456-3.027,6.258-4.253a20.516,20.516,0,0,0,3.019.222c8.981,0,16.262-5.755,16.262-12.856S45.441,27.876,36.46,27.876' transform='translate(-13.739 -19.316)' fill='%23371c1d'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.crop-box {
+  background: #555555;
+  width: 334px;
+  height: 153px;
+  padding: 6px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.crop-box {
+    width: 100%;
+    height: auto;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.crop-box > button {
+  display: inline-block;
+  width: 104px;
+  height: 42px;
+  background: #222;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.crop-box > button {
+    width: 129px;
+    margin-top: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.crop-box > button.on {
+  background: #029ad4;
+}
+
+body div#content.sub section.sub-contents div.container div.crop-box > span {
+  margin-top: 15px;
+  display: block;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.crop-box > span {
+    font-size: 16px;
+    position: absolute;
+    top: 1px;
+    right: 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.crop-area {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.crop-area.active {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.grow-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-box {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.grow-area div.grow-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: 24px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-box > button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.grow-area div.grow-box > button {
+    width: 170px;
+    text-align: start;
+    padding: 10px 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-box > button.on {
+  background: #029ad4;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.grow-area div.grow-box > button.on {
+    padding: 10px 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-main {
+  display: none;
+  margin-top: 40px;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-main.active {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.grow-area div.grow-main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-main .grow-main-txt {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.grow-area div.grow-table {
+    margin-bottom: 40px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 2px solid #029ad4;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+  padding: 0 20px;
+  word-break: keep-all;
+  white-space: nowrap;
+  height: 54px;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td:last-of-type {
+  border-right: none;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td.table-main {
+  background: #eeeeee;
+  text-align: center;
+  width: 125px;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td > a {
+  color: #029AD4;
+}
+
+body div#content.sub section.sub-contents div.container div.grow-area div.grow-table table tbody tr td > a::after {
+  content: '';
+  display: inline-block;
+  background: url(/source/images/bx-link-external.svg);
+  width: 14px;
+  height: 14px;
+  margin-left: 3px;
+  margin-right: 8px;
+}
+
+body div#content.sub section.sub-contents div.container p.table-guide {
+  color: #029ad4;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+body div#content.sub section.sub-contents div.container p.table-guide.mb {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container p.table-guide {
+    display: none;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.notice-weather {
+  margin: 16px 0 30px;
+  width: 100%;
+  height: 60px;
+  background: #eee;
+  -webkit-box-shadow: inset 0px 2px 6px #00000029;
+          box-shadow: inset 0px 2px 6px #00000029;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.notice-weather {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.notice-weather > strong {
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.notice-weather > strong {
+    width: 10%;
+    font-size: 18px;
+    margin: 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.notice-weather > span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.notice-weather > span {
+    width: 10%;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.notice-weather > span.news {
+  color: #029ad4;
+}
+
+body div#content.sub section.sub-contents div.container div.notice-weather > span.day {
+  width: 110px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.notice-weather > span.day {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 {
+    margin-top: 25px;
+    padding: 20px 40px 30px;
+    border: 1px solid #C2CDD9;
+    border-bottom: none;
+    position: relative;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.select {
+  display: inline-block;
+  width: calc(50% - 20px);
+  margin-bottom: 22px;
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.select.day {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.select.day {
+    width: 108px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.select {
+    width: 108px;
+    vertical-align: bottom;
+    margin-bottom: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.select:first-of-type {
+  margin-right: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.select:first-of-type {
+    margin-right: 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.select select {
+  width: 100%;
+  height: 50px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>") no-repeat right center/14px auto;
+  color: #222222;
+  border: none;
+  border-bottom: 1px solid #222;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.select select {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.select select::-ms-expand {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.btn-box {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.btn-box button {
+  font-size: 14px;
+  color: #fff;
+  background: #999999;
+  border-radius: 6px;
+  border: none;
+  width: calc(100%/3 - 10px);
+  height: 44px;
+}
+
+body div#content.sub section.sub-contents div.container div.select-box2 div.btn-box button.on {
+  background: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.btn-box button {
+    vertical-align: bottom;
+    width: 92px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .graph-area {
+  display: none;
+  margin-bottom: 26px;
+  border: 1px solid #C2CDD9;
+  background: #EEF2F7;
+  width: 100%;
+  height: 337px;
+  padding: 20px 20px 40px;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area.active {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .graph-area {
+    margin: 0 0 40px;
+    padding: 30px 30px 30px 70px;
+    height: 462px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph {
+  width: 100%;
+  height: 250px;
+  background: #e5e5e5;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .graph-area .graph {
+    height: 341px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt {
+  margin: 15px auto 0;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .graph-area .graph-txt {
+    margin: 30px auto 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt strong {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt > span {
+  font-size: 16px;
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt > span:nth-child(2)::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background: #D59B36;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt > span:nth-child(3)::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background: #279A27;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt > span:nth-child(4)::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background: #445C78;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph-txt > span.on {
+  font-weight: 600;
+  border-bottom: 2px solid #029AD4;
 }
 
 body div#content.sub section.sub-contents div.container div.board-tools {
@@ -3911,15 +4411,15 @@ body div#content.sub section.sub-contents div.container ul.board-list {
     margin: 0 0 40px;
   }
   body div#content.sub section.sub-contents div.container ul.board-list::before {
-    content: "";
+    content: '';
     display: block;
     height: 44px;
-    background: #DDDDDD;
+    background: #dddddd;
   }
 }
 
 body div#content.sub section.sub-contents div.container ul.board-list li {
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
   position: relative;
 }
 
@@ -4127,7 +4627,7 @@ body div#content.sub section.sub-contents div.container ul.board-list li.notice 
 body div#content.sub section.sub-contents div.container ul.board-list li.reply {
   position: relative;
   padding: 22px 36px;
-  background: #F5F7FB;
+  background: #f5f7fb;
   font-size: 16px;
 }
 
@@ -4139,7 +4639,7 @@ body div#content.sub section.sub-contents div.container ul.board-list li.reply {
 }
 
 body div#content.sub section.sub-contents div.container ul.board-list li.reply::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 15px;
@@ -4225,7 +4725,7 @@ body div#content.sub section.sub-contents div.container ul.gallery-list li p.nam
   font-size: 14px;
   color: #555;
   margin: 0 0 5px;
-  color: #029AD4;
+  color: #029ad4;
 }
 
 body div#content.sub section.sub-contents div.container ul.gallery-list li p.date {
@@ -4262,7 +4762,7 @@ body div#content.sub section.sub-contents div.container div.board-btns div a {
 }
 
 body div#content.sub section.sub-contents div.container div.board-btns div a.write {
-  background: #029AD4;
+  background: #029ad4;
   color: #fff;
   border-color: transparent;
 }
@@ -4278,9 +4778,9 @@ body div#content.sub section.sub-contents div.container div.board-view {
 }
 
 body div#content.sub section.sub-contents div.container div.board-view div.board-box {
-  border-top: 2px solid #AAAAAA;
-  border-bottom: 1px solid #CCCCCC;
-  background: #FAFAFA;
+  border-top: 2px solid #aaaaaa;
+  border-bottom: 1px solid #cccccc;
+  background: #fafafa;
   padding: 15px;
 }
 
@@ -4353,7 +4853,7 @@ body div#content.sub section.sub-contents div.container div.board-view div.file 
   top: 16px;
   width: 84px;
   line-height: 32px;
-  background: #7C818D;
+  background: #7c818d;
   text-align: center;
   color: #fff;
   font-size: 14px;
@@ -4378,13 +4878,13 @@ body div#content.sub section.sub-contents div.container div.board-view div.file 
 }
 
 body div#content.sub section.sub-contents div.container div.board-view div.file p a:hover {
-  color: #7A94D3;
+  color: #7a94d3;
 }
 
 body div#content.sub section.sub-contents div.container div.board-view div.board-text {
   padding: 20px 0;
   margin: 0 0 40px;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
   font-size: 16px;
 }
 
@@ -4413,7 +4913,7 @@ body div#content.sub section.sub-contents div.container div.board-view div.btns 
   width: 152px;
   height: 66px;
   color: #222;
-  background: #E5E5E5;
+  background: #e5e5e5;
   border: 1px solid #999999;
 }
 
@@ -4488,7 +4988,7 @@ body div#content.sub section.sub-contents div.container div.board-write div.boar
   }
 }
 
-body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line input[type="checkbox"] {
+body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line input[type='checkbox'] {
   position: relative;
   top: 3px;
   margin: 0 6px 0 0;
@@ -4517,7 +5017,7 @@ body div#content.sub section.sub-contents div.container div.board-write div.boar
   font-weight: 600;
 }
 
-body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line input[type="text"] {
+body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line input[type='text'] {
   width: 100%;
   height: 50px;
   border: none;
@@ -4526,7 +5026,7 @@ body div#content.sub section.sub-contents div.container div.board-write div.boar
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line input[type="text"] {
+  body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line input[type='text'] {
     width: calc(100% - 202px);
     font-size: 16px;
   }
@@ -4545,7 +5045,7 @@ body div#content.sub section.sub-contents div.container div.board-write div.boar
   }
 }
 
-body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line p.rows input[type="date"] {
+body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line p.rows input[type='date'] {
   width: calc(50% - 10px);
   height: 35px;
   background: #f5f5f5;
@@ -4554,7 +5054,7 @@ body div#content.sub section.sub-contents div.container div.board-write div.boar
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line p.rows input[type="date"] {
+  body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line p.rows input[type='date'] {
     width: 210px;
   }
 }
@@ -4596,7 +5096,7 @@ body div#content.sub section.sub-contents div.container div.board-write div.boar
 }
 
 body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line p.rows span.select-outline::before, body div#content.sub section.sub-contents div.container div.board-write div.board-box div.line p.rows span.select-outline::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 19px;
   display: block;
@@ -4709,7 +5209,7 @@ body div#content.sub section.sub-contents div.container div.board-write ul.link:
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.board-write ul.link::before {
-    content: "링크";
+    content: '링크';
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4744,7 +5244,7 @@ body div#content.sub section.sub-contents div.container div.board-write ul.link 
   line-height: 35px;
 }
 
-body div#content.sub section.sub-contents div.container div.board-write ul.link li input[type="text"] {
+body div#content.sub section.sub-contents div.container div.board-write ul.link li input[type='text'] {
   width: calc(100% - 70px);
   height: 35px;
   padding: 0 10px;
@@ -4777,7 +5277,7 @@ body div#content.sub section.sub-contents div.container div.board-write ul.link 
 }
 
 body div#content.sub section.sub-contents div.container div.board-write ul.link li span.select-outline::before, body div#content.sub section.sub-contents div.container div.board-write ul.link li span.select-outline::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 19px;
   display: block;
@@ -4855,7 +5355,7 @@ body div#content.sub section.sub-contents div.container div.board-write div#file
 
 body footer#footer {
   text-align: center;
-  background: #2F2F2F;
+  background: #2f2f2f;
   color: #fff;
   padding: 30px 0;
   word-break: keep-all;
@@ -4986,4 +5486,3 @@ body footer#footer div.container div.agency a:hover {
 body footer#footer div.container div.agency button.on + div.agency-link {
   display: block;
 }
-/*# sourceMappingURL=style.css.map */
