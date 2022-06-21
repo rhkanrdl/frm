@@ -3570,7 +3570,6 @@ body div#content.sub section.sub-contents div.container div.weather-head div.tem
 body div#content.sub section.sub-contents div.container div.table-outline {
   width: 100%;
   overflow-x: auto;
-  margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
