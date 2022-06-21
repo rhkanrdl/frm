@@ -37,6 +37,18 @@ $(function () {
     },
   });
 
+  new Swiper('.news-swiper', {
+    direction: 'vertical', // 수직 슬라이드
+    autoplay:{
+      delay : 3000,
+      disableOnInteraction: false
+    },
+    loop: true, // 반복 재생 여부
+    slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+    spaceBetween: 10, // 슬라이드 사이 여백
+    
+  })
+
   $('.banner-pause').on('click', function () {
     swiper2.autoplay.stop();
     $(this).removeClass('active');
