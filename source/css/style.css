@@ -2071,6 +2071,16 @@ body {
   /* footer */
 }
 
+body.on {
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  body.on {
+    overflow: auto;
+  }
+}
+
 body .container {
   position: relative;
   display: inline-block;
@@ -2184,31 +2194,102 @@ body header .container button.main-menu i {
     right: 0;
     top: 0;
     bottom: 0;
-    background: #fff;
-    padding: 40px 20px;
+    background: #222222;
+    padding: 20px 20px 80px;
+    overflow-y: auto;
   }
   body nav#main-menu.allMenu {
     display: block;
   }
   body nav#main-menu h2 {
-    margin: 0 0 40px;
-    font-size: 20px;
+    margin: 0 0 20px;
+    font-size: 24px;
     font-weight: 900;
     white-space: nowrap;
+    color: #fff;
   }
   body nav#main-menu ul {
     list-style: none;
     padding: 0;
   }
-  body nav#main-menu ul li h3 {
-    margin: 0;
+  body nav#main-menu ul li .menu-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
   }
-  body nav#main-menu ul li h3 a {
+  body nav#main-menu ul li .menu-title h3 {
+    margin: 20px 0 0 0;
+  }
+  body nav#main-menu ul li .menu-title h3 a {
     display: block;
     margin: 0 0 18px;
     font-weight: 600;
     font-size: 18px;
-    color: #555;
+    color: #fff;
+  }
+  body nav#main-menu ul li .menu-title span i {
+    color: #fff;
+    font-size: 30px;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  body nav#main-menu ul li .menu-title span.on > i {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  body nav#main-menu ul .menus-sub {
+    z-index: 99999;
+    background: #000;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  body nav#main-menu ul .menus-sub.on {
+    opacity: 1;
+    max-height: 1000px;
+    padding: 5px 0 20px 30px;
+  }
+  body nav#main-menu ul .menus-sub > li h4 a {
+    color: #AEDFFF;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  body nav#main-menu ul .menus-sub > li > ul {
+    position: relative;
+  }
+  body nav#main-menu ul .menus-sub > li > ul::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+  }
+  body nav#main-menu ul .menus-sub > li > ul > li {
+    margin-bottom: 5px;
+    padding-left: 16px;
+  }
+  body nav#main-menu ul .menus-sub > li > ul > li a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  body nav#main-menu .menus-sub2 {
+    display: none;
   }
   body nav#main-menu button {
     position: absolute;
@@ -2221,11 +2302,13 @@ body header .container button.main-menu i {
   }
   body nav#main-menu button i {
     font-size: 40px;
+    color: #fff;
   }
 }
 
 @media (min-width: 1200px) {
   body nav#main-menu {
+    position: relative;
     display: inline-block;
     width: 100%;
     background: #029ad4;
@@ -2233,7 +2316,7 @@ body header .container button.main-menu i {
   body nav#main-menu h2 {
     display: none;
   }
-  body nav#main-menu ul {
+  body nav#main-menu .menus > ul {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -2250,18 +2333,105 @@ body header .container button.main-menu i {
         -ms-flex-align: center;
             align-items: center;
   }
-  body nav#main-menu ul li h3 {
+  body nav#main-menu .menus > ul li h3 {
     margin: 0;
   }
-  body nav#main-menu ul li h3 a {
+  body nav#main-menu .menus > ul li h3 a {
     color: #fff;
+    font-size: 20px;
     font-weight: 600;
     line-height: 60px;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
-  body nav#main-menu ul li h3 a:hover {
+  body nav#main-menu .menus > ul li h3 a:hover {
     text-shadow: 0 5px 3px rgba(0, 0, 0, 0.25);
+  }
+  body nav#main-menu .menus > ul li span {
+    display: none;
+  }
+  body nav#main-menu .menus > ul li .menus-sub {
+    display: none;
+  }
+  @-webkit-keyframes submenu {
+    from {
+      max-height: 300px;
+    }
+    to {
+      max-height: 1000px;
+      opacity: 1;
+    }
+  }
+  @keyframes submenu {
+    from {
+      max-height: 300px;
+    }
+    to {
+      max-height: 1000px;
+      opacity: 1;
+    }
+  }
+  body nav#main-menu .menus-sub2 {
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+    top: 60px;
+    background: #222222;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  body nav#main-menu .menus-sub2.on {
+    -webkit-animation-name: submenu;
+            animation-name: submenu;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: auto;
+  }
+  body nav#main-menu .menus-sub2 > ul {
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 10px 20px;
+  }
+  body nav#main-menu .menus-sub2 > ul li h4 a {
+    color: #AEDFFF;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  body nav#main-menu .menus-sub2 > ul li > ul {
+    position: relative;
+  }
+  body nav#main-menu .menus-sub2 > ul li > ul::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+  }
+  body nav#main-menu .menus-sub2 > ul li > ul > li {
+    margin-bottom: 5px;
+    padding-left: 16px;
+  }
+  body nav#main-menu .menus-sub2 > ul li > ul > li a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
   }
   body nav#main-menu button {
     display: none;
@@ -3907,14 +4077,6 @@ body div#content.sub section.sub-contents div.container div.crop-box > span {
   }
 }
 
-body div#content.sub section.sub-contents div.container div.crop-area {
-  display: none;
-}
-
-body div#content.sub section.sub-contents div.container div.crop-area.active {
-  display: block;
-}
-
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.grow-area {
     display: -webkit-box;
@@ -3984,12 +4146,7 @@ body div#content.sub section.sub-contents div.container div.grow-area div.grow-b
 }
 
 body div#content.sub section.sub-contents div.container div.grow-area div.grow-main {
-  display: none;
   margin-top: 40px;
-}
-
-body div#content.sub section.sub-contents div.container div.grow-area div.grow-main.active {
-  display: block;
 }
 
 @media (min-width: 1200px) {
@@ -4253,7 +4410,6 @@ body div#content.sub section.sub-contents div.container div.select-box2 div.btn-
 }
 
 body div#content.sub section.sub-contents div.container .graph-area {
-  display: none;
   margin-bottom: 26px;
   border: 1px solid #c2cdd9;
   background: #eef2f7;
@@ -4262,22 +4418,23 @@ body div#content.sub section.sub-contents div.container .graph-area {
   padding: 20px 20px 40px;
 }
 
-body div#content.sub section.sub-contents div.container .graph-area.active {
-  display: block;
-}
-
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container .graph-area {
-    margin: 0 0 40px;
+    margin: 28px 0 40px;
     padding: 30px 30px 30px 70px;
     height: 462px;
   }
 }
 
 body div#content.sub section.sub-contents div.container .graph-area .graph {
+  display: none;
   width: 100%;
   height: 250px;
   background: #e5e5e5;
+}
+
+body div#content.sub section.sub-contents div.container .graph-area .graph.on {
+  display: block;
 }
 
 @media (min-width: 1200px) {

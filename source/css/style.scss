@@ -31,7 +31,13 @@ body {
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
-
+  &.on{
+    overflow: hidden;
+    @media (min-width: $screen-size-pc) {
+      overflow: auto;
+    }
+    
+  }
   .container {
     @include container(100%);
     text-align: left;
@@ -135,18 +141,19 @@ body {
       right: 0;
       top: 0;
       bottom: 0;
-      background: #fff;
-      padding: 40px 20px;
-
+      background: #222222;
+      padding: 20px 20px 80px;
+      overflow-y: auto;
       &.allMenu {
         display: block;
       }
 
       h2 {
-        margin: 0 0 40px;
-        font-size: 20px;
+        margin: 0 0 20px;
+        font-size: 24px;
         font-weight: 900;
         white-space: nowrap;
+        color: #fff;
       }
 
       ul {
@@ -154,20 +161,94 @@ body {
         padding: 0;
 
         li {
-          h3 {
-            margin: 0;
-
-            a {
-              display: block;
-              margin: 0 0 18px;
-              font-weight: 600;
-              font-size: 18px;
-              color: #555;
+          .menu-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
+            cursor: pointer;
+            h3 {
+              margin: 20px 0 0 0;
+              a {
+                display: block;
+                margin: 0 0 18px;
+                font-weight: 600;
+                font-size: 18px;
+                color: #fff;
+              }
+            }
+            span{
+              
+              i {
+                color: #fff;
+                font-size: 30px;
+                transform: rotate(270deg);
+                @include ani(0.3s);
+              }
+    
+              &.on {
+                & > i {
+                  @include ani(0.3s);
+                  transform: rotate(90deg);
+                }
+              }
             }
           }
         }
-      }
 
+
+        .menus-sub{
+          z-index: 99999;
+          background: #000;
+          width: 100%;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          @include ani(0.3s);
+          &.on{
+            opacity: 1;
+            max-height: 1000px;
+            padding: 5px 0 20px 30px;
+          }
+            >li{
+              h4 {
+                a{
+                  color: #AEDFFF;
+                font-size: 18px;
+                font-weight: 500;
+                }
+              }
+              >ul{
+                position: relative;
+                
+                &::before{
+                  content: '';
+                  width: 2px;
+                  height: 100%;
+                  background-color: rgba(255, 255, 255, 0.4);
+                  position: absolute;
+  
+                }
+                >li{
+                  margin-bottom: 5px;
+                  padding-left: 16px;
+                  a{
+                    
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    font-weight: 100;
+                    
+                  }
+                }
+              }
+            }
+          
+        }
+        
+      }
+      .menus-sub2{
+        display: none;
+      }
       button {
         position: absolute;
         right: 0;
@@ -179,6 +260,7 @@ body {
 
         i {
           font-size: 40px;
+          color: #fff;
         }
       }
     }
@@ -186,6 +268,7 @@ body {
 
   @media (min-width: $screen-size-pc) {
     nav#main-menu {
+      position: relative;
       display: inline-block;
       width: 100%;
       background: #029ad4;
@@ -194,33 +277,115 @@ body {
         display: none;
       }
 
-      ul {
-        width: $screen-size-pc;
-        margin: 0 auto;
-        padding: 0;
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+      .menus{
+        >ul {
+          width: $screen-size-pc;
+          margin: 0 auto;
+          padding: 0;
+          display: flex;
+          list-style: none;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+  
+          li {
+            h3 {
+              margin: 0;
+  
+              a {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 60px;
+                @include ani(0.2s);
+  
+                &:hover {
+                  @include text-shadow(0 5px 3px rgba(0, 0, 0, 0.25));
+                }
+              }
+            }
+            span{
+              display: none;
+            }
+            .menus-sub{
+              display: none;
+            }
+          }
+        }
+      }
 
-        li {
-          h3 {
-            margin: 0;
+      @keyframes submenu {
+        from{
+          max-height: 300px;
+        }
+        to {
+          max-height: 1000px;
+          opacity: 1;
+        }
+      }
 
-            a {
-              color: #fff;
-              font-weight: 600;
-              line-height: 60px;
-              @include ani(0.2s);
 
-              &:hover {
-                @include text-shadow(0 5px 3px rgba(0, 0, 0, 0.25));
+      .menus-sub2{
+        opacity: 0;
+        z-index: 999;
+        position: absolute;
+        top: 60px;
+        background: #222222;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        
+        &.on{
+          animation-name: submenu;
+          animation-duration: 0.3s;
+          animation-timing-function: linear;
+          animation-fill-mode:forwards;
+          overflow: auto;
+        }
+        >ul{
+          margin: 0 auto;
+          padding: 0;
+          display: flex;
+          list-style: none;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 10px 10px 20px;
+          li{
+            h4 {
+              a{
+                color: #AEDFFF;
+              font-size: 18px;
+              font-weight: 500;
+              }
+            }
+            >ul{
+              position: relative;
+              
+              &::before{
+                content: '';
+                width: 2px;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.4);
+                position: absolute;
+
+              }
+              >li{
+                margin-bottom: 5px;
+                padding-left: 16px;
+                a{
+                  
+                  color: #FFFFFF;
+                  font-size: 14px;
+                  font-weight: 400;
+                  
+                }
               }
             }
           }
         }
       }
+      
 
       button {
         display: none;
@@ -1694,6 +1859,9 @@ body {
             }
           }
 
+
+          // sub2
+
           div.crop-box {
             background: #555555;
             width: 334px;
@@ -1740,12 +1908,6 @@ body {
             }
           }
 
-          div.crop-area {
-            display: none;
-            &.active {
-              display: block;
-            }
-          }
 
           div.grow-area {
             @media (min-width: $screen-size-pc) {
@@ -1787,11 +1949,8 @@ body {
             }
 
             div.grow-main {
-              display: none;
               margin-top: 40px;
-              &.active {
-                display: block;
-              }
+              
               @media (min-width: $screen-size-pc) {
                 flex: 1;
               }
@@ -2002,25 +2161,26 @@ body {
           }
 
           .graph-area {
-            display: none;
             margin-bottom: 26px;
             border: 1px solid #c2cdd9;
             background: #eef2f7;
             width: 100%;
             height: 337px;
             padding: 20px 20px 40px;
-            &.active {
-              display: block;
-            }
+            
             @media (min-width: $screen-size-pc) {
-              margin: 0 0 40px;
+              margin: 28px 0 40px;
               padding: 30px 30px 30px 70px;
               height: 462px;
             }
             .graph {
+              display: none;
               width: 100%;
               height: 250px;
               background: #e5e5e5;
+              &.on {
+                display: block;
+              }
               @media (min-width: $screen-size-pc) {
                 height: 341px;
               }

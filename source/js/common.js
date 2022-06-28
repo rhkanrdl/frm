@@ -4,8 +4,8 @@ $(function () {
   maintab();
   outlink();
   grapgtab();
-  growtab();
-  maincroptab();
+  submenu()
+  mobileSubMenu()
 
   const swiper = new Swiper('.main-swiper', {
     slidesPerView: 1,
@@ -64,7 +64,14 @@ $(function () {
 
     return false;
   });
+
+
+
+
+
 });
+
+
 
 /* ----- Window Size ----- */
 var windowh = $(window).height();
@@ -80,11 +87,13 @@ function menu() {
   $('button.main-menu').on('click', function () {
     $('nav#main-menu').toggleClass('menu');
     $('nav#main-menu').toggleClass('allMenu');
+    $('.main').addClass('on')
   });
 
   $('nav#main-menu button.close').on('click', function () {
     $('nav#main-menu').toggleClass('menu');
     $('nav#main-menu').toggleClass('allMenu');
+    $('.main').removeClass('on')
   });
 
   // $("nav#main-menu h3 a").on("click", function (e) {
@@ -138,271 +147,53 @@ function outlink() {
   });
 }
 
-// main crop tab
-
-
-function maincroptab() {
+  // 서브메뉴 온 오프
+  function submenu(){
+    $('#main-menu').on('mouseover',function(){
+      $('.menus-sub2').addClass('on')
+    })
+    $('#main-menu').on('mouseleave',function(){
+      $('.menus-sub2').removeClass('on')
+    })
+  }
   
-  //무
-  $('.crop-box .crop-btn01').on('click', function () {
-    // 작물 탭
-    $('.crop-tab01').removeClass('active');
-    $('.crop-tab02').removeClass('active');
-    $('.crop-tab03').removeClass('active');
-    $('.crop-tab04').removeClass('active');
-    $('.crop-tab05').removeClass('active');
-    $('.crop-tab06').removeClass('active');
+  // mobile sub menu
+  function mobileSubMenu() {
+    $('.menus .menu-title').on('click',function(){
+      $(this).parent().children('.menus-sub').toggleClass('on')
+      $(this).children('span').toggleClass('on')
+    })
+    
+  }
 
-    $('.crop-tab01').addClass('active');
-    // 버튼 탭
-    $('.crop-btn01').removeClass('on');
-    $('.crop-btn02').removeClass('on');
-    $('.crop-btn03').removeClass('on');
-    $('.crop-btn04').removeClass('on');
-    $('.crop-btn05').removeClass('on');
-    $('.crop-btn06').removeClass('on');
 
-    $('.crop-btn01').addClass('on');
-  });
-
-  //마늘
-  $('.crop-box .crop-btn02').on('click', function () {
-    // 작물 탭
-    $('.crop-tab01').removeClass('active');
-    $('.crop-tab02').removeClass('active');
-    $('.crop-tab03').removeClass('active');
-    $('.crop-tab04').removeClass('active');
-    $('.crop-tab05').removeClass('active');
-    $('.crop-tab06').removeClass('active');
-
-    $('.crop-tab02').addClass('active');
-    // 버튼 탭
-    $('.crop-btn01').removeClass('on');
-    $('.crop-btn02').removeClass('on');
-    $('.crop-btn03').removeClass('on');
-    $('.crop-btn04').removeClass('on');
-    $('.crop-btn05').removeClass('on');
-    $('.crop-btn06').removeClass('on');
-
-    $('.crop-btn02').addClass('on');
-  });
-
-  //당근
-  $('.crop-box .crop-btn03').on('click', function () {
-    // 작물 탭
-    $('.crop-tab01').removeClass('active');
-    $('.crop-tab02').removeClass('active');
-    $('.crop-tab03').removeClass('active');
-    $('.crop-tab04').removeClass('active');
-    $('.crop-tab05').removeClass('active');
-    $('.crop-tab06').removeClass('active');
-
-    $('.crop-tab03').addClass('active');
-    // 버튼 탭
-    $('.crop-btn01').removeClass('on');
-    $('.crop-btn02').removeClass('on');
-    $('.crop-btn03').removeClass('on');
-    $('.crop-btn04').removeClass('on');
-    $('.crop-btn05').removeClass('on');
-    $('.crop-btn06').removeClass('on');
-
-    $('.crop-btn03').addClass('on');
-  });
-
-  //양파
-  $('.crop-box .crop-btn04').on('click', function () {
-    // 작물 탭
-    $('.crop-tab01').removeClass('active');
-    $('.crop-tab02').removeClass('active');
-    $('.crop-tab03').removeClass('active');
-    $('.crop-tab04').removeClass('active');
-    $('.crop-tab05').removeClass('active');
-    $('.crop-tab06').removeClass('active');
-
-    $('.crop-tab04').addClass('active');
-    // 버튼 탭
-    $('.crop-btn01').removeClass('on');
-    $('.crop-btn02').removeClass('on');
-    $('.crop-btn03').removeClass('on');
-    $('.crop-btn04').removeClass('on');
-    $('.crop-btn05').removeClass('on');
-    $('.crop-btn06').removeClass('on');
-
-    $('.crop-btn04').addClass('on');
-  });
-
-  //양배추
-  $('.crop-box .crop-btn05').on('click', function () {
-    // 작물 탭
-    $('.crop-tab01').removeClass('active');
-    $('.crop-tab02').removeClass('active');
-    $('.crop-tab03').removeClass('active');
-    $('.crop-tab04').removeClass('active');
-    $('.crop-tab05').removeClass('active');
-    $('.crop-tab06').removeClass('active');
-
-    $('.crop-tab05').addClass('active');
-    // 버튼 탭
-    $('.crop-btn01').removeClass('on');
-    $('.crop-btn02').removeClass('on');
-    $('.crop-btn03').removeClass('on');
-    $('.crop-btn04').removeClass('on');
-    $('.crop-btn05').removeClass('on');
-    $('.crop-btn06').removeClass('on');
-
-    $('.crop-btn05').addClass('on');
-  });
-
-  //브로콜리
-  $('.crop-box .crop-btn06').on('click', function () {
-    // 작물 탭
-    $('.crop-tab01').removeClass('active');
-    $('.crop-tab02').removeClass('active');
-    $('.crop-tab03').removeClass('active');
-    $('.crop-tab04').removeClass('active');
-    $('.crop-tab05').removeClass('active');
-    $('.crop-tab06').removeClass('active');
-
-    $('.crop-tab06').addClass('active');
-    // 버튼 탭
-    $('.crop-btn01').removeClass('on');
-    $('.crop-btn02').removeClass('on');
-    $('.crop-btn03').removeClass('on');
-    $('.crop-btn04').removeClass('on');
-    $('.crop-btn05').removeClass('on');
-    $('.crop-btn06').removeClass('on');
-
-    $('.crop-btn06').addClass('on');
-  });
-}
 
 // graph tab
 function grapgtab() {
-  // 기온
-  $('.select-box2 .btn-box .graph-temp').on('click', function () {
-    // 그래프 탭
-    $('.graph-tab01').removeClass('active');
-    $('.graph-tab02').removeClass('active');
-    $('.graph-tab03').removeClass('active');
+  //기온
+  $('.select-box2 .btn-box .graph-temp').on('click',function(){
+    $('.select-box2 .btn-box button').removeClass('on')
+    $('.select-box2 .btn-box .graph-temp').addClass('on')
 
-    $('.graph-tab01').addClass('active');
+    $('.graph-area .graph').removeClass('on')
+    $('.graph-area .graph-tab01').addClass('on')
+  })
 
-    // 버튼 탭
-    $('.graph-temp').removeClass('on');
-    $('.graph-water').removeClass('on');
-    $('.graph-sunshine').removeClass('on');
+//강수
+  $('.select-box2 .btn-box .graph-water').on('click',function(){
+    $('.select-box2 .btn-box button').removeClass('on')
+    $('.select-box2 .btn-box .graph-water').addClass('on')
 
-    $('.graph-temp').addClass('on');
-  });
+    $('.graph-area .graph').removeClass('on')
+    $('.graph-area .graph-tab02').addClass('on')
+  })
 
-  //강수
-  $('.select-box2 .btn-box .graph-water').on('click', function () {
-    $('.graph-tab01').removeClass('active');
-    $('.graph-tab02').removeClass('active');
-    $('.graph-tab03').removeClass('active');
+//일조
+  $('.select-box2 .btn-box .graph-sunshine').on('click',function(){
+    $('.select-box2 .btn-box button').removeClass('on')
+    $('.select-box2 .btn-box .graph-sunshine').addClass('on')
 
-    $('.graph-tab02').addClass('active');
-
-    // 버튼 탭
-    $('.graph-temp').removeClass('on');
-    $('.graph-water').removeClass('on');
-    $('.graph-sunshine').removeClass('on');
-
-    $('.graph-water').addClass('on');
-  });
-
-  //일조
-  $('.select-box2 .btn-box .graph-sunshine').on('click', function () {
-    $('.graph-tab01').removeClass('active');
-    $('.graph-tab02').removeClass('active');
-    $('.graph-tab03').removeClass('active');
-
-    $('.graph-tab03').addClass('active');
-
-    // 버튼 탭
-    $('.graph-temp').removeClass('on');
-    $('.graph-water').removeClass('on');
-    $('.graph-sunshine').removeClass('on');
-
-    $('.graph-sunshine').addClass('on');
-  });
-}
-
-// grow tab
-function growtab() {
-  // 정식기
-  $('.grow-area .grow-box .grow-btn01').on('click', function () {
-    // 표 탭
-    $('.grow-tab01').removeClass('active');
-    $('.grow-tab02').removeClass('active');
-    $('.grow-tab03').removeClass('active');
-    $('.grow-tab04').removeClass('active');
-
-    $('.grow-tab01').addClass('active');
-
-    // 버튼 탭
-    $('.grow-btn01').removeClass('on');
-    $('.grow-btn02').removeClass('on');
-    $('.grow-btn03').removeClass('on');
-    $('.grow-btn04').removeClass('on');
-
-    $('.grow-btn01').addClass('on');
-  });
-
-  // 영양생장기
-  $('.grow-area .grow-box .grow-btn02').on('click', function () {
-    // 표 탭
-    $('.grow-tab01').removeClass('active');
-    $('.grow-tab02').removeClass('active');
-    $('.grow-tab03').removeClass('active');
-    $('.grow-tab04').removeClass('active');
-
-    $('.grow-tab02').addClass('active');
-
-    // 버튼 탭
-    $('.grow-btn01').removeClass('on');
-    $('.grow-btn02').removeClass('on');
-    $('.grow-btn03').removeClass('on');
-    $('.grow-btn04').removeClass('on');
-
-    $('.grow-btn02').addClass('on');
-  });
-
-  // 생식생장기
-  $('.grow-area .grow-box .grow-btn03').on('click', function () {
-    // 표 탭
-    $('.grow-tab01').removeClass('active');
-    $('.grow-tab02').removeClass('active');
-    $('.grow-tab03').removeClass('active');
-    $('.grow-tab04').removeClass('active');
-
-    $('.grow-tab03').addClass('active');
-
-    // 버튼 탭
-    $('.grow-btn01').removeClass('on');
-    $('.grow-btn02').removeClass('on');
-    $('.grow-btn03').removeClass('on');
-    $('.grow-btn04').removeClass('on');
-
-    $('.grow-btn03').addClass('on');
-  });
-
-  // 수확기
-  $('.grow-area .grow-box .grow-btn04').on('click', function () {
-    // 표 탭
-    $('.grow-tab01').removeClass('active');
-    $('.grow-tab02').removeClass('active');
-    $('.grow-tab03').removeClass('active');
-    $('.grow-tab04').removeClass('active');
-
-    $('.grow-tab04').addClass('active');
-
-    // 버튼 탭
-    $('.grow-btn01').removeClass('on');
-    $('.grow-btn02').removeClass('on');
-    $('.grow-btn03').removeClass('on');
-    $('.grow-btn04').removeClass('on');
-
-    $('.grow-btn04').addClass('on');
-  });
+    $('.graph-area .graph').removeClass('on')
+    $('.graph-area .graph-tab03').addClass('on')
+  })
 }
