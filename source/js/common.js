@@ -149,7 +149,7 @@ function outlink() {
 
   // 서브메뉴 온 오프
   function submenu(){
-    $('#main-menu').on('mouseover',function(){
+    $('.menu-title').on('mouseover',function(){
       $('.menus-sub2').addClass('on')
     })
     $('#main-menu').on('mouseleave',function(){
