@@ -4310,7 +4310,15 @@ body div#content.sub section.sub-contents div.container div.notice-weather span.
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.select-box2 {
     margin-top: 25px;
-    padding: 20px 40px 30px;
+    padding: 20px 0 30px;
+    border-bottom: none;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.select-box2 div.select-main {
+    padding: 20px 20px 30px 40px;
     border: 1px solid #c2cdd9;
     border-bottom: none;
     position: relative;
@@ -4420,7 +4428,7 @@ body div#content.sub section.sub-contents div.container .graph-area {
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container .graph-area {
-    margin: 28px 0 40px;
+    margin: 0 0 40px;
     padding: 30px 30px 30px 70px;
     height: 462px;
   }

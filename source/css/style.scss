@@ -2077,10 +2077,18 @@ body {
           div.select-box2 {
             @media (min-width: $screen-size-pc) {
               margin-top: 25px;
-              padding: 20px 40px 30px;
-              border: 1px solid #c2cdd9;
+              padding: 20px 0 30px;
+              // border: 1px solid #c2cdd9;
               border-bottom: none;
               position: relative;
+            }
+            div.select-main{
+              @media (min-width: $screen-size-pc) {
+                padding: 20px 20px 30px 40px;
+                border: 1px solid #c2cdd9;
+                border-bottom: none;
+                position: relative;
+              }
             }
             div.select {
               display: inline-block;
@@ -2169,7 +2177,7 @@ body {
             padding: 20px 20px 40px;
             
             @media (min-width: $screen-size-pc) {
-              margin: 28px 0 40px;
+              margin: 0 0 40px;
               padding: 30px 30px 30px 70px;
               height: 462px;
             }
