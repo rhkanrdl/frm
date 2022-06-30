@@ -236,8 +236,10 @@ body {
                     
                     color: #FFFFFF;
                     font-size: 14px;
-                    font-weight: 100;
-                    
+                    font-weight: 400;
+                    &:active{
+                      color: #AEDFFF;
+                    }
                   }
                 }
               }
@@ -378,7 +380,9 @@ body {
                   color: #FFFFFF;
                   font-size: 14px;
                   font-weight: 400;
-                  
+                  &:hover{
+                    color: #AEDFFF;
+                  }
                 }
               }
             }
@@ -2254,6 +2258,321 @@ body {
               }
             }
           }
+
+
+          // sub03
+
+          div.sub-weather{
+            height: 100vh;
+            div.weather-radio{
+              background: #029AD4;
+              width: 100%;
+              height: 54px;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              color: rgba(255, 255, 255, 0.57);
+              font-size: 18px;
+              @media (min-width: $screen-size-pc) {
+                justify-content: flex-start;
+              }
+              input[type="radio"]{
+                display: none;
+              }
+              label {
+                cursor: pointer;
+                @media (min-width: $screen-size-pc) {
+                  margin: 0 30px;
+                }
+              }
+              input:checked + label {
+                color: #fff;
+              }
+            }
+
+            .sub-weather-tab01,.sub-weather-tab02{
+              display: none;
+              &.on {
+                display: block;
+              }
+            }
+
+            div.select {
+              width: 100%;
+              height: 50px;
+              background: #029AD4;
+              border-top: 1px solid #fff;
+              display: flex;
+              align-items: center;
+              padding: 0 30px;
+              h4{
+                width: 150px;
+                font-size: 15px;
+                font-weight: 400;
+                margin: 0 30px 0 0;
+                color: #fff;
+                @media (min-width: $screen-size-pc) {
+                  font-size: 18px;
+                }
+              }
+              select {
+                width: 70%;
+                height: 30px;
+                background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(255, 255, 255, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>")
+                  no-repeat right center / 14px auto;
+                color: #fff;
+                border: none;
+                border-bottom: 1px solid #fff;
+                font-size: 15px;
+                font-weight: 400;
+                outline: none;
+                appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                -webkit-appearance: none;
+
+                @media (min-width: $screen-size-pc) {
+                  width: 200px;
+                  font-size: 18px;
+                }
+                &::-ms-expand {
+                  display: none;
+                }
+              }
+            }
+
+            div.weather-date{
+              background: #E0E0E0;
+              width: 100%;
+              height: auto;;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding-bottom: 20px;
+              @media (min-width: $screen-size-pc) {
+                flex-direction: row;
+                padding: 0 30px;
+                height: 91px;
+              }
+              h4{
+                font-size: 20px;
+                color: #222222;
+                font-weight: 599;
+                margin: 10px 0;
+                @media (min-width: $screen-size-pc) {
+                  margin: 0 20px 0 0;
+                }
+              }
+              >span {
+                @media (min-width: $screen-size-pc) {
+                  margin: 0 20px 0 0;
+                }
+                input[type="date"]{
+                  width: 45%;
+                  height: 42px;
+                  font-size: 16px;
+                  padding: 15px;
+                  @media (min-width: $screen-size-pc) {
+                    width: 172px;
+                  }
+                }
+                >span{
+                  margin: 0 5px;
+                  
+                }
+              }
+              button{
+                margin-top: 15px;
+                width: 120px;
+                height: 42px;
+                background: #555555;
+                border-radius: 6px;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                @media (min-width: $screen-size-pc) {
+                  margin: 0 20px 0 0;
+                  width: 90px;
+                }
+              }
+              a {
+                margin-top: 15px;
+                width: 205px;
+                height: 42px;
+                background: #357A18;
+                border-radius: 6px;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (min-width: $screen-size-pc) {
+                  margin: 0;
+                }
+                &::before{
+                  content: '';
+                  background: url(/source/images/excel.svg);
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+
+          //sub04
+
+          div.sub-map{
+            height: 100vh;
+            div.select-box3 {
+              @media (min-width: $screen-size-pc) {
+                margin-top: 15px;
+                position: relative;
+              }
+              div.select-main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media (min-width: $screen-size-pc) {
+                  padding: 20px 20px 20px 40px;
+                  border: 1px solid #c2cdd9;
+                  position: relative;
+                  flex-direction: row;
+                }
+                h4{
+                  font-size: 20px;
+                  color: #222222;
+                  font-weight: 500;
+                  margin: 10px 0;
+                  @media (min-width: $screen-size-pc) {
+                    margin: 0 40px 0 0;
+                  }
+                }
+                .selects{
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-around;
+                  @media (min-width: $screen-size-pc) {
+                    justify-content: flex-start;
+                    width: auto;
+                    margin: 0 50px 0 0;
+                  }
+                  div.select {
+                    display: inline-block;
+                    width: calc(30% - 5px);
+                    margin-bottom: 22px;
+                    @media (min-width: $screen-size-pc) {
+                      width: 101px;
+                      vertical-align: bottom;
+                      margin-right: 5px;
+                      margin-bottom: 0;
+                    }
+      
+                    &:first-of-type {
+                      margin-right: 20px;
+      
+                      @media (min-width: $screen-size-pc) {
+                        margin-right: 20px;
+                      }
+                    }
+      
+                    select {
+                      width: 100%;
+                      height: 50px;
+                      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>")
+                        no-repeat right center / 14px auto;
+                      color: #222222;
+                      border: none;
+                      border-bottom: 1px solid #222;
+                      font-size: 16px;
+                      font-weight: 600;
+                      outline: none;
+                      appearance: none;
+                      -moz-appearance: none;
+                      -ms-appearance: none;
+                      -webkit-appearance: none;
+      
+                      @media (min-width: $screen-size-pc) {
+                        font-size: 18px;
+                      }
+                      &::-ms-expand {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                .radio-box{
+                  display: flex;
+                  flex-wrap: wrap;
+                  width: 100%;
+                  @media (min-width: $screen-size-pc) {
+                    width: auto;
+                  }
+                  label{
+                    margin-right: 5px;
+                    width: calc(20% - 5px);
+                    height: 40px;
+                    color: #fff;
+                    background: #999999;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 13px;
+                    cursor: pointer;
+                    @media (min-width: $screen-size-pc) {
+                      width: 90px;
+                    }
+                    &:last-child{
+                      margin-right: 0;
+                    }
+                  }
+                  input[type="radio"]{
+                    display: none;
+                  }
+                  input:checked + label {
+                    background: #029AD4;
+                  }
+                }
+              }
+              
+              .sub-map-text{
+                margin-top: 10px;
+                background: #EEF2F7;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 20px;
+                color: #222222;
+                @media (min-width: $screen-size-pc) {
+                  margin: 0;
+                  border: 1px solid #C2CDD9;
+                  border-top: none;
+                }
+              
+              }
+
+              .sub-map-graph{
+                margin-top: 20px;
+                width: 100%;
+                height: 337px;
+                background: #E0E0E0;
+                @media (min-width: $screen-size-pc) {
+                  height: 639px;
+                }
+                .graph{
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+          }
+        }
+
 
           div.board-tools {
             margin: 26px 0;

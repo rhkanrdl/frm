@@ -326,181 +326,228 @@
     <div id="content" class="sub">
       <section class="sub-contents">
         <div class="container">
-          <h3 class="stitle">작목 생육 맞춤형 기상정보</small></h3>
+          <h3 class="stitle">현재기상</small></h3>
           <p class="page-url">
             <a href=""><i class="bx bxs-share-alt"></i> https://weather.agri.kr/jeju</a>
           </p>
 
           <!--S:content-->
-          <div class="crop-box">
-            <button class="on">무</button>
-            <button >마늘</button>
-            <button >당근</button>
-            <button >양파</button>
-            <button>양배추</button>
-            <button >브로콜리</button>
-            <span>2022년 4월 04일 기준</span>
-          </div>
-          
-          
-          <div class="crop-area">
-            <div class="grow-area">
-              <div class="grow-box">
-                <button>정식기</button>
-                <button>영양생장기</button>
-                <button class=" on">생식생장기</button>
-                <button >수확기</button>
+          <div class="sub-weather">
+            <div class="weather-radio">
+              <input id="radio01" type="radio" name="weather" checked ><label for="radio01">전체보기(현재)</label>
+              <input id="radio02" type="radio" name="weather"><label for="radio02">지점별보기</label>
+            </div>
+            <div class="sub-weather-tab01 on">
+              <div class="weather-date">
+                <h4>기간검색</h4>
+                <span>
+                  <input type="date" >
+                  <span>-</span>
+                  <input type="date" >
+                </span>
+                <button>검색</button>
+                <a href="">엑셀로 관측자료 보기</a>
               </div>
-              
-              <div class="grow-main">
-                <h2 class="grow-main-txt">생식생장기</h2>
-                <div class="grow-table">
-                  <table>
+              <div class="table-outline">
+                <table style="border-top: none;">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>지역</th>
+                            <th>관측지점</th>
+                            <th>해발(m)	</th>
+                            <th>관측시각	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                      <tr>
-                        <td class="table-main" colspan="2">시기</td>
-                        <td>4월 상순 ~ 5월 중순</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main">최적기상조건</td>
-                        <td class="table-main">평균온도</td>
-                        <td>화뢰형성 15℃ 이하 / 화뢰발달 15 ~ 18℃</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main" rowspan="2">병해충</td>
-                        <td class="table-main">병</td>
-                        <td><a href="" target="_blank">검은썩음무름병</a></td>
-                      </tr>
-                      <tr>
-                        <td class="table-main">해충</td>
-                        <td><a href="" target="_blank">배추좀나방</a> <a href="" target="_blank">잔딧물</a> <a href="" target="_blank">도눅나방</a ><a href="" target="_blank">배추흰나비</a>   </td>
-                      </tr>
-                      <tr>
-                        <td class="table-main" rowspan="2">위험기상</td>
-                        <td class="table-main">저온해</td>
-                        <td>최저기온 4℃ 이하</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main">고온해</td>
-                        <td>최고기온 25℃ 이상</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main" colspan="2">주요농작업</td>
-                        <td>물관리, 양분관리</td>
-                      </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>제주북부</td>
+                            <td>제주센터</td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>제주남부</td>
+                            <td>제주센터</td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>제주동부</td>
+                            <td>제주센터</td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
                     </tbody>
-                  </table>
-                </div>
-                <p class="table-guide">표는 좌우로 스크롤 가능합니다.</p>
+                </table>
+            </div>
+            </div>
+            <div class="sub-weather-tab02">
+              
+              <div class="select">
+                <h4>관측지점선택 :</h4>
+                <select>
+                    <option>제주센터</option>
+                </select>
               </div>
+
+              
+              <div class="weather-date">
+                <h4>기간검색</h4>
+                <span>
+                  <input type="date" >
+                  <span>-</span>
+                  <input type="date" >
+                </span>
+                <button>검색</button>
+                <a href="">엑셀로 관측자료 보기</a>
+              </div>
+              <div class="table-outline">
+                <table style="border-top: none;">
+                    <thead>
+                        <tr>
+                            <th>관측시각</th>
+                            <th>현재기온(℃)</th>
+                            <th>현재기온(℃)</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                            <th>현재기온(℃)	</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202206301300</td>
+                            <td>제주북부</td>
+                            <td>제주센터</td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>202206301300</td>
+                            <td>제주남부</td>
+                            <td>제주센터</td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                        <tr>
+                            <td>202206301300</td>
+                            <td>제주동부</td>
+                            <td>제주센터</td>
+                            <td>102</td>
+                            <td>09:40</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                            <td>30.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             </div>
             
-  
-            <div class="notice-weather">
-              <strong>특보 / 공지</strong>
-              <span class="news">강풍 예비특보</span>
-              <div class="news-swiper">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <span class="day">o 05월 26일 새벽(00시~06시) : 제주(서귀포 중산간, 제주시 중산간, 해안지역)</span>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="day">o 05월 25일 새벽(00시~06시) : 제주(서귀포 중산간, 제주시 중산간, 해안지역)</span>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="day">o 05월 24일 새벽(00시~06시) : 제주(서귀포 중산간, 제주시 중산간, 해안지역)</span>
-                  </li>
-                </ul>
-                
-              </div>
-              
-            </div>
-  
-            <div class="select-box2">
-              
-              <div class="select-main">
-                <div class="select">
-                  <select>
-                      <option>서귀포시</option>
-                  </select>
-              </div>
-  
-              <div class="select">
-                  <select>
-                      <option>강정동</option>
-                  </select>
-              </div>
-  
-              <div class="btn-box">
-                <button class="graph-temp on">기온</button> 
-                <button class="graph-water">강수</button>
-                <button class="graph-sunshine" >일조</button>
-              </div>
-              
-  
-              <div class="select day">
-                <select>
-                    <option>10일</option>
-                </select>
-            </div>
-              </div>
-              
-          
-          <div class="graph-area">
-            <!-- 그래프 1-->
-            <div class="graph graph-tab01 on">
-              그래프영역1
-            </div>
-            <!-- 그래프 2-->
-            <div class="graph graph-tab02">
-              그래프영역2
-            </div>
-            <!-- 그래프 3-->
-            <div class="graph graph-tab03">
-              그래프영역3
-            </div>
-            <div class="graph-txt">
-              <strong>기준</strong>
-              <span>올해</span>
-              <span>작년</span>
-              <span class="on">평년</span>
-            </div>
-          </div>
-  
-          <div class="table-outline">
-            <table>
-                <thead>
-                    <tr>
-                        <th>기간</th>
-                        <th>04월 03일</th>
-                        <th>04월 04일</th>
-                        <th>04월 05일</th>
-                        <th>04월 06일</th>
-                        <th>04월 07일</th>
-                        <th>04월 08일</th>
-                        <th>04월 09일</th>
-                        <th>04월 10일</th>
-                        <th>04월 11일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>위험기상</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-        <p class="table-guide mb">표는 좌우로 스크롤 가능합니다.</p>
+          <p style="display: block;" class="table-guide">표는 좌우로 스크롤 가능합니다.</p>
           </div>
 
 

@@ -326,181 +326,56 @@
     <div id="content" class="sub">
       <section class="sub-contents">
         <div class="container">
-          <h3 class="stitle">작목 생육 맞춤형 기상정보</small></h3>
+          <h3 class="stitle">일기상지도</small></h3>
           <p class="page-url">
             <a href=""><i class="bx bxs-share-alt"></i> https://weather.agri.kr/jeju</a>
           </p>
 
           <!--S:content-->
-          <div class="crop-box">
-            <button class="on">무</button>
-            <button >마늘</button>
-            <button >당근</button>
-            <button >양파</button>
-            <button>양배추</button>
-            <button >브로콜리</button>
-            <span>2022년 4월 04일 기준</span>
-          </div>
-          
-          
-          <div class="crop-area">
-            <div class="grow-area">
-              <div class="grow-box">
-                <button>정식기</button>
-                <button>영양생장기</button>
-                <button class=" on">생식생장기</button>
-                <button >수확기</button>
-              </div>
-              
-              <div class="grow-main">
-                <h2 class="grow-main-txt">생식생장기</h2>
-                <div class="grow-table">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td class="table-main" colspan="2">시기</td>
-                        <td>4월 상순 ~ 5월 중순</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main">최적기상조건</td>
-                        <td class="table-main">평균온도</td>
-                        <td>화뢰형성 15℃ 이하 / 화뢰발달 15 ~ 18℃</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main" rowspan="2">병해충</td>
-                        <td class="table-main">병</td>
-                        <td><a href="" target="_blank">검은썩음무름병</a></td>
-                      </tr>
-                      <tr>
-                        <td class="table-main">해충</td>
-                        <td><a href="" target="_blank">배추좀나방</a> <a href="" target="_blank">잔딧물</a> <a href="" target="_blank">도눅나방</a ><a href="" target="_blank">배추흰나비</a>   </td>
-                      </tr>
-                      <tr>
-                        <td class="table-main" rowspan="2">위험기상</td>
-                        <td class="table-main">저온해</td>
-                        <td>최저기온 4℃ 이하</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main">고온해</td>
-                        <td>최고기온 25℃ 이상</td>
-                      </tr>
-                      <tr>
-                        <td class="table-main" colspan="2">주요농작업</td>
-                        <td>물관리, 양분관리</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p class="table-guide">표는 좌우로 스크롤 가능합니다.</p>
-              </div>
-            </div>
-            
-  
-            <div class="notice-weather">
-              <strong>특보 / 공지</strong>
-              <span class="news">강풍 예비특보</span>
-              <div class="news-swiper">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <span class="day">o 05월 26일 새벽(00시~06시) : 제주(서귀포 중산간, 제주시 중산간, 해안지역)</span>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="day">o 05월 25일 새벽(00시~06시) : 제주(서귀포 중산간, 제주시 중산간, 해안지역)</span>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="day">o 05월 24일 새벽(00시~06시) : 제주(서귀포 중산간, 제주시 중산간, 해안지역)</span>
-                  </li>
-                </ul>
-                
-              </div>
-              
-            </div>
-  
-            <div class="select-box2">
+          <div class="sub-map">
+            <div class="select-box3">
               
               <div class="select-main">
-                <div class="select">
-                  <select>
-                      <option>서귀포시</option>
-                  </select>
+                <h4>일시선택</h4>
+                <div class="selects">
+                  <div class="select">
+                    <select>
+                        <option>2022년</option>
+                    </select>
+                  </div>
+                  <div class="select">
+                      <select>
+                          <option>12월</option>
+                      </select>
+                  </div>
+                  <div class="select">
+                      <select>
+                          <option>5일</option>
+                      </select>
+                  </div>
+                </div>
+                <h4>항목선택</h4>
+                <div class="radio-box">
+                  <input type="radio" name="map" id="radio01" checked> <label for="radio01">평균기온</label>
+                  <input type="radio" name="map" id="radio02"> <label for="radio02">최고기온</label>
+                  <input type="radio" name="map" id="radio03"> <label for="radio03">최저기온</label>
+                  <input type="radio" name="map" id="radio04"> <label for="radio04">평균습도</label>
+                  <input type="radio" name="map" id="radio05"> <label for="radio05">일강우량</label>
+                </div>
+
               </div>
-  
-              <div class="select">
-                  <select>
-                      <option>강정동</option>
-                  </select>
+              <div class="sub-map-text">
+                <span>예보 지도를 보시고자 하실 때에는 모레 이내의 일자를 선택하시면 됩니다.</span>
               </div>
-  
-              <div class="btn-box">
-                <button class="graph-temp on">기온</button> 
-                <button class="graph-water">강수</button>
-                <button class="graph-sunshine" >일조</button>
+
+              <div class="sub-map-graph">
+                <div class="graph">
+                  <!-- 그래프영역 -->
+                  그래프
+                </div>
               </div>
-              
-  
-              <div class="select day">
-                <select>
-                    <option>10일</option>
-                </select>
+              <p style="display: block;" class="table-guide">위 자료는 농업연구 및 지도 사업에만 활용할 수 있습니다.</p>
             </div>
-              </div>
-              
-          
-          <div class="graph-area">
-            <!-- 그래프 1-->
-            <div class="graph graph-tab01 on">
-              그래프영역1
-            </div>
-            <!-- 그래프 2-->
-            <div class="graph graph-tab02">
-              그래프영역2
-            </div>
-            <!-- 그래프 3-->
-            <div class="graph graph-tab03">
-              그래프영역3
-            </div>
-            <div class="graph-txt">
-              <strong>기준</strong>
-              <span>올해</span>
-              <span>작년</span>
-              <span class="on">평년</span>
-            </div>
-          </div>
-  
-          <div class="table-outline">
-            <table>
-                <thead>
-                    <tr>
-                        <th>기간</th>
-                        <th>04월 03일</th>
-                        <th>04월 04일</th>
-                        <th>04월 05일</th>
-                        <th>04월 06일</th>
-                        <th>04월 07일</th>
-                        <th>04월 08일</th>
-                        <th>04월 09일</th>
-                        <th>04월 10일</th>
-                        <th>04월 11일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>위험기상</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                        <td>저온피해</td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-        <p class="table-guide mb">표는 좌우로 스크롤 가능합니다.</p>
           </div>
 
 

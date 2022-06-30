@@ -4,8 +4,9 @@ $(function () {
   maintab();
   outlink();
   grapgtab();
-  submenu()
-  mobileSubMenu()
+  submenu();
+  mobileSubMenu();
+  weathertab();
 
   const swiper = new Swiper('.main-swiper', {
     slidesPerView: 1,
@@ -166,7 +167,17 @@ function outlink() {
     
   }
 
-
+  // sub-weather
+  function weathertab(){
+    $(".weather-radio #radio01").on('click',function(){
+      $('.sub-weather-tab01,.sub-weather-tab02').removeClass('on')
+      $('.sub-weather-tab01').addClass('on')
+    })
+    $(".weather-radio #radio02").on('click',function(){
+      $('.sub-weather-tab01,.sub-weather-tab02').removeClass('on')
+      $('.sub-weather-tab02').addClass('on')
+    })
+  }
 
 // graph tab
 function grapgtab() {
