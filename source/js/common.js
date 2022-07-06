@@ -7,6 +7,7 @@ $(function () {
   submenu();
   mobileSubMenu();
   weathertab();
+  intromenu();
 
   const swiper = new Swiper('.main-swiper', {
     slidesPerView: 1,
@@ -148,13 +149,25 @@ function outlink() {
   });
 }
 
+  // 인트로 메뉴
+  function intromenu(){
+    $(".main-intro .container ul li a").on('mouseover',function(){
+      $(this).children('h3').addClass('on')
+    })
+    $(".main-intro .container ul li a").on('mouseleave',function(){
+      $(this).children('h3').removeClass('on')
+    })
+  }
+
   // 서브메뉴 온 오프
   function submenu(){
     $('.menu-title').on('mouseover',function(){
-      $('.menus-sub2').addClass('on')
+      $('.menus').addClass('active')
+      $('.menus-sub').addClass('active')
     })
     $('#main-menu').on('mouseleave',function(){
-      $('.menus-sub2').removeClass('on')
+      $('.menus').removeClass('active')
+      $('.menus-sub').removeClass('active')
     })
   }
   
