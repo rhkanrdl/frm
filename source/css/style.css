@@ -4529,7 +4529,7 @@ body div#content.sub section.sub-contents div.container .graph-area .graph-txt >
 }
 
 body div#content.sub section.sub-contents div.container div.sub-weather {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 body div#content.sub section.sub-contents div.container div.sub-weather div.weather-radio {
