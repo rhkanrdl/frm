@@ -444,7 +444,6 @@ body {
               display: inline-block;
               width: calc(50% - 10px);
               margin-bottom: 22px;
-
               @media (min-width: $screen-size-pc) {
                 width: 108px;
                 vertical-align: bottom;
@@ -477,6 +476,9 @@ body {
 
                 &::-ms-expand {
                   display: none;
+                }
+                option{
+                  color: #333;
                 }
               }
             }
@@ -2347,6 +2349,9 @@ body {
                 &::-ms-expand {
                   display: none;
                 }
+                option{
+                  color: #333;
+                }
               }
             }
 
@@ -2376,7 +2381,7 @@ body {
                 @media (min-width: $screen-size-pc) {
                   margin: 0 20px 0 0;
                 }
-                input[type="date"]{
+                input{
                   width: 45%;
                   height: 42px;
                   font-size: 16px;

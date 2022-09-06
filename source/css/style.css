@@ -2532,6 +2532,10 @@ body div#content.main section.main-issue div.container div.select-box div.select
   display: none;
 }
 
+body div#content.main section.main-issue div.container div.select-box div.select select option {
+  color: #333;
+}
+
 body div#content.main section.main-issue div.container div.select-box button {
   font-size: 14px;
   color: #fff;
@@ -4637,6 +4641,10 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.sele
   display: none;
 }
 
+body div#content.sub section.sub-contents div.container div.sub-weather div.select select option {
+  color: #333;
+}
+
 body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date {
   background: #E0E0E0;
   width: 100%;
@@ -4684,7 +4692,7 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.weat
   }
 }
 
-body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date > span input[type="date"] {
+body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date > span input {
   width: 45%;
   height: 42px;
   font-size: 16px;
@@ -4693,7 +4701,7 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.weat
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date > span input[type="date"] {
+  body div#content.sub section.sub-contents div.container div.sub-weather div.weather-date > span input {
     width: 172px;
   }
 }
