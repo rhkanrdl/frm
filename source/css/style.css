@@ -4974,6 +4974,1068 @@ body div#content.sub section.sub-contents div.container div.sub-map div.select-b
   height: 100%;
 }
 
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 32px;
+  font-size: 14px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-group {
+    font-size: 22px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 51px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-group label {
+  color: #666666;
+  cursor: pointer;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #CCCCCC;
+  width: 50%;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-group label {
+    text-align: start;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-group label:hover {
+  color: #222222;
+  font-weight: 600;
+  border-bottom: 2px solid #029AD4;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-group .notice-01 {
+    width: 30%;
+  }
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-group .notice-02 {
+    width: 70%;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-group input[type="radio"] {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-group input:checked + label {
+  color: #222222;
+  font-weight: 600;
+  border-bottom: 2px solid #029AD4;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01.on {
+  display: block;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .name {
+    margin-top: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .name label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .name label {
+    margin-right: 56px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .name input {
+  margin-top: 8px;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .name input {
+    width: 230px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item {
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item label {
+    margin-right: 75px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 331px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item .btn-group label {
+  margin-top: 5px;
+  width: 23%;
+  height: 44px;
+  border: none;
+  border-radius: 6px;
+  background-color: #CCCCCC;
+  font-size: 16px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item .btn-group label {
+    width: 80px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item .btn-group input[type="radio"] {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .item .btn-group input:checked + label {
+  background-color: #029AD4;
+  color: white;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address {
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address label {
+    margin-right: 55px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address select {
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  margin-top: 7px;
+  font-size: 16px;
+  padding: 5px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>") no-repeat 95% 50%/14px;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address select {
+    margin-right: 5px;
+    width: 152px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address select option {
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address input {
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  margin-top: 7px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .address input {
+    width: 400px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone {
+  margin-top: 17px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone label {
+    margin-right: 59px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone .check input {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone .check input {
+    width: 310px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone .check button {
+  width: 140px;
+  height: 45px;
+  border: none;
+  background-color: #029AD4;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone .check button {
+    width: 122px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check {
+  margin-top: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check label {
+  font-size: 16px;
+  margin-right: 75px;
+}
+
+@media (max-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check label {
+    display: none;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check .recheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check .recheck input {
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check .recheck input {
+    width: 310px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check .recheck button {
+  width: 140px;
+  height: 44px;
+  border: none;
+  background-color: #CCCCCC;
+  border-radius: 0 5px 5px 0;
+  color: #222222;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .phone-check .recheck button {
+    width: 122px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .terms {
+  margin-top: 42px;
+  background-color: #F4F4F4;
+  padding: 30px;
+  color: #666666;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .terms {
+    margin-top: 47px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .terms p {
+  margin-top: 5px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .consent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .consent {
+    margin-top: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .consent input {
+  border: 1px solid #CCCCCC;
+  width: 18px;
+  height: 18px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .consent label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 23px;
+  margin-bottom: 34px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .request {
+    margin-top: 77px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .request button {
+  width: 290px;
+  height: 44px;
+  border: none;
+  background-color: #029AD4;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab01 .request button {
+    width: 400px;
+    height: 70px;
+    font-size: 22px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02.on {
+  display: block;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone {
+  margin-top: 17px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone label {
+    margin-right: 59px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone .check input {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone .check input {
+    width: 310px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone .check button {
+  width: 140px;
+  height: 45px;
+  border: none;
+  background-color: #029AD4;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone .check button {
+    width: 122px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check {
+  margin-top: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check label {
+  font-size: 16px;
+  margin-right: 75px;
+}
+
+@media (max-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check label {
+    display: none;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check .recheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check .recheck input {
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check .recheck input {
+    width: 310px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check .recheck button {
+  width: 140px;
+  height: 44px;
+  border: none;
+  background-color: #CCCCCC;
+  border-radius: 0 5px 5px 0;
+  color: #222222;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .phone-check .recheck button {
+    width: 122px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .terms {
+  margin: 30px 0;
+  background-color: #F4F4F4;
+  padding: 30px;
+  color: #666666;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .terms {
+    margin-top: 47px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .terms p {
+  margin-top: 5px;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .tab02-btn {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .tab02-btn button {
+  display: inline-block;
+  width: 130px;
+  height: 44px;
+  border: none;
+  background-color: #029AD4;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .tab02-btn button {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.sub-notice .notice-tab02 .tab02-btn button.btn-02 {
+  background-color: #ccc;
+  color: #333;
+  font-weight: 400;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #C2CDD9;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-title label {
+  color: #222222;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-title label {
+    margin-right: 82px;
+    font-size: 20px;
+    padding: 35px 0 37px 25px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-title select {
+  width: 100%;
+  height: 50px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>") no-repeat right center/14px auto;
+  color: #222222;
+  border: none;
+  border-bottom: 1px solid #222;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-title select {
+    width: 217px;
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-title select option {
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box {
+    padding: 10px 26px 30px 26px;
+    background-color: #E0E0E0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe > label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe > label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 44px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe .observe-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe .observe-box label {
+  margin-top: 5px;
+  width: 50%;
+  height: 44px;
+  border: none;
+  border-radius: 6px;
+  background-color: #999999;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe .observe-box label {
+    width: 130px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe .observe-box input[type="radio"] {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-observe .observe-box input:checked + label {
+  background-color: #029AD4;
+  color: white;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place > label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place > label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 73px;
+    width: 100px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box label {
+  margin-top: 5px;
+  width: 23%;
+  height: 44px;
+  border: none;
+  border-radius: 6px;
+  background-color: #999999;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box label {
+    width: 80px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box input[type="radio"] {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-place .place-box input:checked + label {
+  background-color: #029AD4;
+  color: white;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day > label {
+  font-size: 16px;
+  color: #222222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day > label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 120px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day select {
+  width: 47%;
+  height: 50px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>") no-repeat right center/14px auto;
+  color: #222222;
+  border: none;
+  border-bottom: 1px solid #222;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day select:first-child {
+  margin-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day select {
+    width: 120px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day select option {
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day span {
+  color: #222222;
+  font-size: 16px;
+  margin: 10px auto 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-day span {
+    margin: 0 12px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-search {
+  margin: 24px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container .sub-past .past-box .past-search {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-box .past-search button {
+  width: 164px;
+  height: 44px;
+  background-color: #555555;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+body div#content.sub section.sub-contents div.container .sub-past .past-table {
+  margin-top: 100px;
+}
+
 body div#content.sub section.sub-contents div.container div.board-tools {
   margin: 26px 0;
   font-size: 0;

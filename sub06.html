@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>제주 영농 지원 기상정보</title>
+    <link href="source/css/boxicons.css" rel="stylesheet" />
+    <link href="source/css/swiper-bundle.css" rel="stylesheet" />
+    <link href="source/css/style.css" rel="stylesheet" />
+
+    <!-- javaScript -->
+    <script src="source/js/jquery-3.5.1.min.js"></script>
+    <script src="source/js/swiper-bundle.js"></script>
+    <script src="source/js/common.js"></script>
+  </head>
+
+  <body class="main">
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+      <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+      <div class="container">
+        <h1><a href="/">제주 영농 지원 기상정보</a></h1>
+
+        <div class="site-links">
+          <a targe="_blank" href="">제주지방기상청</a>
+          <a targe="_blank" href="">제주특별자치도 농업기술원</a>
+        </div>
+
+        <button class="main-menu">
+          <i class="bx bx-menu"></i>
+          메뉴호출버튼
+        </button>
+      </div>
+    </header>
+    <!-- E:header -->
+
+    <!-- S:main_menu -->
+    <nav id="main-menu" class="menu">
+      <h2>제주 영농 지원 기상정보</h2>
+
+      <div class="menus">
+        <ul>
+          <li>
+            <div class="menu-title ">
+              <h3><a href="">농업기상</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+
+            <ul class="menus-sub">
+              <li>
+                <h4><a href="">실시간</a></h4>
+                <ul>
+                  <li><a href="">현재기상</a></li>
+                  <li><a href="">현재기상지도</a></li>
+                  <li><a href="">기상변동 그래프</a></li>
+                </ul>
+                <h4><a href="">일별기상</a></h4>
+                <ul>
+                  <li><a href="">일일관측자료</a></li>
+                  <li><a href="">일기상지도</a></li>
+                  <li><a href="">기상변동그래프</a></li>
+                  <li><a href="">일간관측자료</a></li>
+                  <li><a href="">월간관측자료</a></li>
+                </ul>
+                <h4><a href="">서리 및 가뭄</a></h4>
+                <ul>
+                  <li><a href="">데이터조회</a></li>
+                  <li><a href="">현재 가뭄지도</a></li>
+                  <li><a href="">그래프조회</a></li>
+                </ul>
+                <h4><a href="">서리 저온</a></h4>
+                <ul>
+                  <li><a href="">서리예보</a></li>
+                  <li><a href="">평균보기</a></li>
+                  <li><a href="">전체보기</a></li>
+                </ul>
+                <h4><a href="">영농정보</a></h4>
+                <ul>
+                  <li><a href="">주간동향</a></li>
+                  <li><a href="">방제정보</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">월동채소</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">무</a></h4>
+                <h4><a href="">마늘</a></h4>
+                <h4><a href="">당근</a></h4>
+                <h4><a href="">양파</a></h4>
+                <h4><a href="">양배추</a></h4>
+                <h4><a href="">브로콜리</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">병해충발생예측</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">병해충발생예측</a></h4>
+                <ul>
+                  <li><a href="">감귤궤양병</a></li>
+                  <li><a href="">감귤더뎅이병</a></li>
+                  <li><a href="">감귤검은점무늬병</a></li>
+                  <li><a href="">깍지벌레</a></li>
+                  <li><a href="">감자역병</a></li>
+                  <li><a href="">마늘고자리파리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">감귤</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">데뎅이병</a></h4>
+                <h4><a href="">검은점무늬병</a></h4>
+                <h4><a href="">화살깍지벌레</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">날씨정보</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub ">
+              <li>
+                <h4><a href="">우리동네정보</a></h4>
+                <h4><a href="">과거기상자료</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">커뮤니티</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub">
+              <li>
+                <h4><a href="">커뮤니티</a></h4>
+                <ul>
+                  <li><a href="">공지사항</a></li>
+                  <li><a href="">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-title">
+              <h3><a href="">문자서비스신청</a></h3>
+              <span class="sub-down"><i class="bx bx-chevron-right"></i></span>
+            </div>
+            <ul class="menus-sub">
+              <li>
+                <h4><a href="">신청하기</a></h4>
+                <h4><a href="">수정하기</a></h4>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <button class="close">
+        <i class="bx bx-x"></i>
+        메뉴닫기
+      </button>
+    </nav>
+    <!-- E:main_menu -->
+
+    <!-- S:subContent -->
+    <div id="content" class="sub">
+      <section class="sub-contents">
+        <div class="container">
+          <h3 class="stitle">과거기상정보</small></h3>
+          <p class="page-url">
+            <a href=""><i class="bx bxs-share-alt"></i> https://weather.agri.kr/jeju</a>
+          </p>
+
+          <!--S:content-->
+          <div class="sub-past">
+            <div class="past-title">
+              <label for="">기상자료</label>
+              <select id="">
+                <option>과거10년</option>
+                <option>일자료</option>
+                <option>기후평년값</option>
+              </select>
+            </div>
+
+            <div class="past-box">
+              <div class="past-observe">
+                <label for="observe01">기상관측장비</label>
+                <div class="observe-box">
+                  <input type="radio" name="observe" id="observe01" checked> <label class="observe-01" for="observe01">종관기상관측</label>
+                  <input type="radio" name="observe" id="observe02"> <label class="observe-02" for="observe02">방재기상관측</label>
+                </div>
+              </div>
+  
+              <div class="past-place">
+                <label>지점</label>
+                <div class="place-box place-tab01 on">
+                  <input type="radio" name="place" id="place01" > <label  for="place01">제주</label>
+                  <input type="radio" name="place" id="place02" > <label  for="place02">고산</label>
+                  <input type="radio" name="place" id="place03" > <label  for="place03">성산</label>
+                  <input type="radio" name="place" id="place04" > <label  for="place04">서귀포</label>
+                </div>
+                <div class="place-box place-tab02">
+                  <input type="radio" name="place" id="place05" > <label  for="place05">가파도</label>
+                  <input type="radio" name="place" id="place06" > <label  for="place06">강정</label>
+                  <input type="radio" name="place" id="place07" > <label  for="place07">구좌</label>
+                  <input type="radio" name="place" id="place08" > <label  for="place08">금악</label>
+                  <input type="radio" name="place" id="place09" > <label  for="place09">기상(과)</label>
+                  <input type="radio" name="place" id="place10" > <label  for="place10">대정</label>
+                  <input type="radio" name="place" id="place11" > <label  for="place11">대흘</label>
+                  <input type="radio" name="place" id="place12" > <label  for="place12">마라도</label>
+                  <input type="radio" name="place" id="place13" > <label  for="place13">사제비</label>
+                  <input type="radio" name="place" id="place14" > <label  for="place14">산천단</label>
+                  <input type="radio" name="place" id="place15" > <label  for="place15">삼각봉</label>
+                  <input type="radio" name="place" id="place16" > <label  for="place16">새별오름</label>
+                  <input type="radio" name="place" id="place17" > <label  for="place17">색달</label>
+                  <input type="radio" name="place" id="place18" > <label  for="place18">서광</label>
+                  <input type="radio" name="place" id="place19" > <label  for="place19">선흘</label>
+                  <input type="radio" name="place" id="place20" > <label  for="place20">성산수산</label>
+                  <input type="radio" name="place" id="place21" > <label  for="place21">송당</label>
+                  <input type="radio" name="place" id="place22" > <label  for="place22">애월</label>
+                  <input type="radio" name="place" id="place23" > <label  for="place23">어리목</label>
+                  <input type="radio" name="place" id="place24" > <label  for="place24">영실</label>
+                  <input type="radio" name="place" id="place25" > <label  for="place25">오등</label>
+                  <input type="radio" name="place" id="place26" > <label  for="place26">외도</label>
+                  <input type="radio" name="place" id="place27" > <label  for="place27">우도</label>
+                  <input type="radio" name="place" id="place28" > <label  for="place28">월정</label>
+                  <input type="radio" name="place" id="place29" > <label  for="place29">윗세오름</label>
+                  <input type="radio" name="place" id="place30" > <label  for="place30">유수암</label>
+                  <input type="radio" name="place" id="place31" > <label  for="place31">제주가시리</label>
+                  <input type="radio" name="place" id="place32" > <label  for="place32">제주남원</label>
+                  <input type="radio" name="place" id="place33" > <label  for="place33">중문</label>
+                  <input type="radio" name="place" id="place34" > <label  for="place34">진달래밭</label>
+                  <input type="radio" name="place" id="place35" > <label  for="place35">태풍센터</label>
+                  <input type="radio" name="place" id="place36" > <label  for="place36">표선</label>
+                  <input type="radio" name="place" id="place37" > <label  for="place37">한라산남벽</label>
+                  <input type="radio" name="place" id="place38" > <label  for="place38">한림</label>
+                  <input type="radio" name="place" id="place39" > <label  for="place39">추자도</label>
+                  <input type="radio" name="place" id="place40" > <label  for="place40">성판악</label>
+                </div>
+                
+              </div>
+  
+              <div class="past-day">
+                <label for="">기간</label>
+                <div class="day-box">
+                  <select name="" id="">
+                    <option value="01">01월</option>
+                    <option value="02">02월</option>
+                    <option value="03">03월</option>
+                    <option value="04">04월</option>
+                    <option value="05">05월</option>
+                    <option value="06">06월</option>
+                    <option value="07">07월</option>
+                    <option value="08">08월</option>
+                    <option value="09">09월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="01">01일</option>
+                    <option value="02">02일</option>
+                    <option value="03">03일</option>
+                    <option value="04">04일</option>
+                    <option value="05">05일</option>
+                    <option value="06">06일</option>
+                    <option value="07">07일</option>
+                    <option value="08">08일</option>
+                    <option value="09">09일</option>
+                    <option value="10">10일</option>
+                    <option value="11">11일</option>
+                    <option value="12">12일</option>
+                    <option value="13">13일</option>
+                    <option value="14">14일</option>
+                    <option value="15">15일</option>
+                    <option value="16">16일</option>
+                    <option value="17">17일</option>
+                    <option value="18">18일</option>
+                    <option value="19">19일</option>
+                    <option value="20">20일</option>
+                    <option value="21">21일</option>
+                    <option value="22">22일</option>
+                    <option value="23">23일</option>
+                    <option value="24">24일</option>
+                    <option value="25">25일</option>
+                    <option value="26">26일</option>
+                    <option value="27">27일</option>
+                    <option value="28">28일</option>
+                    <option value="29">29일</option>
+                    <option value="30">30일</option>
+                    <option value="31">31일</option>
+                  </select>
+                </div>
+                
+                <span>~</span>
+                <div class="day-box">
+                  <select name="" id="">
+                    <option value="01">01월</option>
+                    <option value="02">02월</option>
+                    <option value="03">03월</option>
+                    <option value="04">04월</option>
+                    <option value="05">05월</option>
+                    <option value="06">06월</option>
+                    <option value="07">07월</option>
+                    <option value="08">08월</option>
+                    <option value="09">09월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="01">01일</option>
+                    <option value="02">02일</option>
+                    <option value="03">03일</option>
+                    <option value="04">04일</option>
+                    <option value="05">05일</option>
+                    <option value="06">06일</option>
+                    <option value="07">07일</option>
+                    <option value="08">08일</option>
+                    <option value="09">09일</option>
+                    <option value="10">10일</option>
+                    <option value="11">11일</option>
+                    <option value="12">12일</option>
+                    <option value="13">13일</option>
+                    <option value="14">14일</option>
+                    <option value="15">15일</option>
+                    <option value="16">16일</option>
+                    <option value="17">17일</option>
+                    <option value="18">18일</option>
+                    <option value="19">19일</option>
+                    <option value="20">20일</option>
+                    <option value="21">21일</option>
+                    <option value="22">22일</option>
+                    <option value="23">23일</option>
+                    <option value="24">24일</option>
+                    <option value="25">25일</option>
+                    <option value="26">26일</option>
+                    <option value="27">27일</option>
+                    <option value="28">28일</option>
+                    <option value="29">29일</option>
+                    <option value="30">30일</option>
+                    <option value="31">31일</option>
+                  </select>
+                </div>
+              </div>
+              <div class="past-search">
+                <button>검색</button>
+              </div>
+            </div>
+
+            <div class="past-table">
+              <div class="table-outline">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>일자</th>
+                            <th>저점</th>
+                            <th>평균기온(℃)</th>
+                            <th>최저기온(℃)</th>
+                            <th>최고기온(℃)</th>
+                            <th>강수량(mm)</th>
+                            <th>강수일수</th>
+                            <th>최대순간풍속(m/s)</th>
+                            <th>평균풍속(m/s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-guide mb">표는 좌우로 스크롤 가능합니다.</p>
+            </div>
+            
+          </div>
+
+
+
+
+          <!--E:content-->
+        </div>
+      </section>
+    </div>
+    <!-- E:subContent -->
+
+    <!-- S:footer -->
+    <footer id="footer">
+      <div class="container">
+        <address>
+          <p>주소: (우)63278 제주특별자치도 제주시 만덕로 6길 32 제주지방기상청</p>
+          <p>대표전화: 064) 726-0367 (평일 09:00~18:00, 야간휴일은 당직실 연결)</p>
+        </address>
+
+        <p class="copyright">COPYRIGHT© 2021 KMA. ALL RIGHT RESERVED. E-mail: webmasterkma@korea.kr</p>
+
+        <div class="agency">
+          <button class="agency-open">유관기관 <i class="bx bxs-chevron-right"></i></button>
+          <div class="agency-link">
+            <a href="http://www.asdf.go.kr" target="blank" title="새창">사이트1</a>
+            <a href="http://asdf.net" target="blank" title="새창">사이트2</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- E:footer -->
+  </body>
+</html>

@@ -8,6 +8,8 @@ $(function () {
   mobileSubMenu();
   weathertab();
   intromenu();
+  notivetab()
+  pasttab()
 
   const swiper = new Swiper('.main-swiper', {
     slidesPerView: 1,
@@ -219,5 +221,33 @@ function grapgtab() {
 
     $('.graph-area .graph').removeClass('on')
     $('.graph-area .graph-tab03').addClass('on')
+  })
+}
+
+// notice tab
+function notivetab() {
+  // tab01 
+  $('.notice-group .notice-01').on('click',function(){
+    $('.notice-tab02').removeClass('on')
+    $('.notice-tab01').addClass('on')
+  })
+  // tab02
+  $('.notice-group .notice-02').on('click',function(){
+    $('.notice-tab01').removeClass('on')
+    $('.notice-tab02').addClass('on')
+  })
+}
+
+// past tab
+function pasttab(){
+  // tab01
+  $('.observe-box .observe-01').on('click',function(){
+    $('.place-tab02').removeClass('on')
+    $('.place-tab01').addClass('on')
+  })
+  // tab02
+  $('.observe-box .observe-02').on('click',function(){
+    $('.place-tab01').removeClass('on')
+    $('.place-tab02').addClass('on')
   })
 }
