@@ -36,7 +36,9 @@ body {
     @media (min-width: $screen-size-pc) {
       overflow: auto;
     }
-    
+  }
+  &.hidden{
+    overflow: hidden;
   }
   .container {
     @include container(100%);
@@ -2929,7 +2931,7 @@ body {
             .phone {
               margin-top: 17px;
               @media (min-width: $screen-size-pc ) {
-                margin-top: 20px;
+                margin-top: 40px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -3058,6 +3060,328 @@ body {
                   font-weight: 400;
                 }
             }
+            }
+          }
+
+          .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 300;
+            width: 100%;
+            height: 100%;
+            &.show{
+              display: block;
+            }
+            .modal-box{
+              width: 340px;
+              height: auto;
+              background-color: #fff;
+              margin: 10px auto;
+              border-radius: 5px;
+              @media (min-width: $screen-size-pc ) {
+                width: 580px;
+              }
+              .modal-title{
+                width: 340px;
+                height: 70px;
+                background-color: #EEEEEE;
+                border-radius: 5px 5px 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (min-width: $screen-size-pc ) {
+                  width: 580px;
+                }
+                h4{
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #222222;
+                }
+              }
+              .modal-body{
+                padding: 20px;
+                .userInfo{
+                  h4{
+                    margin: 0;
+                    font-size: 16px;
+                    color: #222;
+                  }
+                  .modal-phone{
+                    margin-top: 20px;
+                    @media (min-width: $screen-size-pc ) {
+                      display: flex;
+                      flex-direction: column;
+                    }
+                    label{
+                      font-size: 16px;
+                      color: #222222;
+                    }
+                    .user-phone{
+                      margin-top: 8px;
+                      width: 300px;
+                      height: 44px;
+                      border: 1px solid #CCCCCC;
+                      border-radius: 6px;
+                      background: #E4E4E4;
+                      color: #555555;
+                      font-size: 16px;
+                      padding: 10px;
+                      @media (min-width: $screen-size-pc ) {
+                        width: 100%;
+                      }
+                    }
+                  }
+                  .modal-address{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    @media (min-width: $screen-size-pc ) {
+                      margin-top: 20px;
+                    }
+                    label{
+                      font-size: 16px;
+                      color: #222222;
+                      @media (min-width: $screen-size-pc ) {
+                        margin-right: 55px;
+                      }
+                    }
+                    select {
+                      width: 100%;
+                      height: 44px;
+                      background-color: #fff;
+                      border: 1px solid #CCCCCC;
+                      border-radius: 6px;
+                      margin-top: 7px;
+                      font-size: 16px;
+                      padding: 5px;
+                      background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>")
+                        no-repeat 95% 50% / 14px;
+                      outline: none;
+                      appearance: none;
+                      -moz-appearance: none;
+                      -ms-appearance: none;
+                      -webkit-appearance: none;
+                      @media (min-width: $screen-size-pc ) {
+                        display: inline-block;
+                        width: 49.6%;
+                      }
+                      option{
+                        color: #222;
+                      }
+                    }
+                    input {
+                      height: 44px;
+                      background-color: #fff;
+                      border: 1px solid #CCCCCC;
+                      border-radius: 6px;
+                      margin-top: 7px;
+                      font-size: 18px;
+                      padding: 5px;
+                      @media (min-width: $screen-size-pc ) {
+                        width: 100%;
+                      }
+                    }
+                  }
+                  .list{
+                    margin-top: 10px;
+                    background: #F4F4F4;
+                    border-radius: 6px;
+                    padding: 5px 10px;
+                    span{
+                      color: #029AD4;
+                      font-size: 14px;
+                    }
+                    button{
+                      margin-top:5px;
+                      float: right;
+                      border: none;
+                      color: #000000;
+                      width: 10px;
+                      height: 10px;
+                      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='9.999' viewBox='0 0 10 9.999'%3E%3Cpath id='bx-x' d='M15.043,6.344l-3.751,3.75-3.75-3.75-1.25,1.25,3.75,3.75-3.75,3.75,1.25,1.25,3.75-3.75,3.751,3.75,1.25-1.25-3.75-3.75,3.75-3.75Z' transform='translate(-6.293 -6.344)'/%3E%3C/svg%3E%0A") no-repeat center / auto 100%;
+                    }
+                  }
+                }
+                .userOption{
+                  margin-top: 38px;
+                  h4{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #222222;
+                    margin: 0;
+                  }
+                  .modal-form{
+                    margin-top: 22px;
+                    padding-bottom: 26px;
+                    border-bottom: 1px solid #CCCCCC;
+                    @media (min-width: $screen-size-pc ) {
+                      padding-bottom: 30px;
+                    }
+                    >label{
+                      font-size: 16px;
+                      font-weight: 600;
+                      color: #029AD4;
+                    }
+                    .radio-box{
+                      margin-top: 8px;
+                      width: 300px;
+                      height: 44px;
+                      background-color: #CCCCCC;
+                      border-radius: 6px;
+                      padding: 3px;
+                      display: flex;
+                      @media (min-width: $screen-size-pc ) {
+                        margin-top: 0px;
+                        width: 140px;
+                        height: 34px;
+                        display: inline-flex;
+                        float: right;
+                      }
+                      label{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 148px;
+                        height: 38px;
+                        border-radius: 6px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        @media (min-width: $screen-size-pc ) {
+                          width: 66px;
+                          height: 28px;
+                        }
+                      }
+                      input[type="radio"]{
+                        display: none;
+                      }
+                      input:checked + label {
+                        background-color: #029AD4;
+                        color: #fff;
+                        &:last-child{
+                          background-color: #787878;
+                          color: #fff;
+                        }
+                      }
+                    }
+                    .check-box{
+                      margin-top: 24px;
+                      display: flex;
+                      flex-wrap: wrap;
+                      gap: 18px 28px;
+                      .checkbox-form{
+                        display: flex;
+                        input[type='checkbox'] {
+                          width: 26px;
+                          height: 26px;
+                          margin-right: 9px;
+                          cursor: pointer;
+                        }
+                        label{
+                          font-size: 16px;
+                          color: #222222;
+                          cursor: pointer;
+                        }
+                      }
+                    }
+                    .select-box{
+                      margin-top: 22px;
+                      display: flex;
+                      flex-direction: column;
+                      label {
+                        font-size: 16px;
+                        color: #222;
+                      }
+                      input {
+                        width: 100%;
+                        height: 44px;
+                        background-color: #fff;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 6px;
+                        margin-top: 7px;
+                        font-size: 18px;
+                        padding: 5px;
+                        @media (min-width: $screen-size-pc ) {
+                          width: 49%;
+                        }
+                      }
+                      select {
+                        width: 100%;
+                        height: 44px;
+                        background-color: #fff;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 6px;
+                        margin-top: 7px;
+                        font-size: 16px;
+                        padding: 5px;
+                        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(85, 85, 85, 1);transform: ;msFilter:;'><path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path></svg>")
+                          no-repeat 95% 50% / 14px;
+                        outline: none;
+                        appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -webkit-appearance: none;
+                        @media (min-width: $screen-size-pc ) {
+                          width: 49%;
+                          &.info-select{
+                            width: 100%;
+                          }
+                        }
+                        option{
+                          color: #222;
+                        }
+                      }
+                      
+                    }
+                    p{
+                      margin: 14px 0 0 0;
+                      font-size: 14px;
+                      color: #FF0900;
+                    }
+                  }
+                  
+                }
+              }
+              .modal-btn{
+                display: flex;
+                justify-content: center;
+                padding-top: 22px;
+                height: 116px;
+                gap: 5px;
+                button{
+                  width: 145px;
+                  height: 44px;
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #FFFFFF;
+                  border: none;
+                  border-radius: 6px;
+                  &:first-child{
+                    background: #029AD4;
+                  }
+                  &:last-child{
+                    background: #555555;
+                  }
+                }
+              }
+            }
+          }
+
+
+          .modal-backdrop{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            transition: opacity 0.5s linear;
+            &.show{
+              display: block;
+              opacity: 0.5;
             }
           }
           

@@ -266,7 +266,7 @@
                 <label for="check">개인정보 수집 동의서에 동의합니다.</label>
               </div>
               <div class="request">
-                <button>신청하기</button>
+                <button class="modal-show">신청하기</button>
               </div>
             </div>
 
@@ -315,6 +315,176 @@
               </div>
 
             </div>
+            <div class="modal">
+              <div class="modal-box">
+                <div class="modal-title">
+                  <h3>알림옵션 설정</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="userInfo">
+                    <h4>신청자 정보</h4>
+                    <div class="modal-phone">
+                      <label for="">휴대폰번호</label>
+                      <input class="user-phone" type="text" readonly value="010">
+                    </div>
+                    <div class="modal-address">
+                      <label>재배지 주소</label>
+                      <div class="select-form">
+                        <select>
+                          <option>제주시</option>
+                          <option>서귀포시</option>
+                        </select>
+                        <select>
+                          <option>구좌읍</option>
+                          <option>구좌읍</option>
+                        </select>
+                      </div>
+                      
+                      <input type="text" />
+                    </div>
+                    <div class="list">
+                      <span>제주특별자치도 제주시 애월읍 한림</span>
+                      <button></button>
+                    </div>
+                    <div class="list">
+                      <span>제주특별자치도 제주시 구좌읍 서울</span>
+                      <button></button>
+                    </div>
+                  </div>
+                  <div class="userOption">
+                    <h4>알림옵션 선택</h4>
+                    <div class="modal-form">
+                      <label for="">기상특보</label>
+                      <div class="radio-box">
+                        <input name="op-weather" checked type="radio" id="op-weather1">
+                        <label for="op-weather1">ON</label>
+                        <input name="op-weather" type="radio" id="op-weather2">
+                        <label for="op-weather2">OFF</label>
+                      </div>
+                      <div class="check-box">
+                        <div class="checkbox-form">
+                          <input id="check01" type="checkbox">
+                          <label for="check01">강풍</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check02" type="checkbox">
+                          <label for="check02">호우</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check03" type="checkbox">
+                          <label for="check03">한파</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check04" type="checkbox">
+                          <label for="check04">건조</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check05" type="checkbox">
+                          <label for="check05">풍량</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check06" type="checkbox">
+                          <label for="check06">태풍</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check07" type="checkbox">
+                          <label for="check07">대설</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check08" type="checkbox">
+                          <label for="check08">황사</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check09" type="checkbox">
+                          <label for="check09">폭염</label>
+                        </div>
+                        <div class="checkbox-form">
+                          <input id="check10" type="checkbox">
+                          <label for="check10">폭풍해일</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-form">
+                      <label for="">단기예보</label>
+                      <div class="radio-box">
+                        <input name="op-forecast" checked type="radio" id="op-forecast1">
+                        <label for="op-forecast1">ON</label>
+                        <input name="op-forecast" type="radio" id="op-forecast2">
+                        <label for="op-forecast2">OFF</label>
+                      </div>
+                      <div class="select-box">
+                        <label>일강수량 (mm)</label>
+                        <div class="select-form">
+                          <input type="text" placeholder="0.1"/>
+                          <select>
+                            <option>이상</option>
+                          </select>
+                        </div>
+                      </div>
+                      <p>※ 일강수량은 0.1mm 이상임</p>
+                    </div>
+
+                    <div class="modal-form">
+                      <label for="">동네예보 풍속</label>
+                      <div class="radio-box">
+                        <input name="op-wind" checked type="radio" id="op-wind1">
+                        <label for="op-wind1">ON</label>
+                        <input name="op-wind" type="radio" id="op-wind2">
+                        <label for="op-wind2">OFF</label>
+                      </div>
+                      <div class="select-box">
+                        <label>풍속(m/s)</label>
+                        <div class="select-form">
+                          <input type="text" placeholder="1"/>
+                          <select>
+                            <option>이상</option>
+                            <option>이하</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-form">
+                      <label for="">중기예보 강수일</label>
+                      <div class="radio-box">
+                        <input name="op-water" checked type="radio" id="op-water1">
+                        <label for="op-water1">ON</label>
+                        <input name="op-water" type="radio" id="op-water2">
+                        <label for="op-water2">OFF</label>
+                      </div>
+                    </div>
+
+                    <div class="modal-form">
+                      <label for="">동해예측 정보</label>
+                      <div class="radio-box">
+                        <input name="op-info" checked type="radio" id="op-info1">
+                        <label for="op-info1">ON</label>
+                        <input name="op-info" type="radio" id="op-info2">
+                        <label for="op-info2">OFF</label>
+                      </div>
+                      <div class="select-box">
+                        <label>작물</label>
+                        <div class="select-form">
+                          <select class="info-select">
+                            <option>당근 (-1.4℃)</option>
+                            <option>마늘 (-7.0℃)</option>
+                            <option>무 (0℃)</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="modal-btn">
+                  <button>수정</button>
+                  <button class="modal-close">취소</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-backdrop"></div>
             
           </div>
 

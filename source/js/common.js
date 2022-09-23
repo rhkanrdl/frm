@@ -10,6 +10,8 @@ $(function () {
   intromenu();
   notivetab()
   pasttab()
+  modalshow()
+  modalclose()
 
   const swiper = new Swiper('.main-swiper', {
     slidesPerView: 1,
@@ -249,5 +251,23 @@ function pasttab(){
   $('.observe-box .observe-02').on('click',function(){
     $('.place-tab01').removeClass('on')
     $('.place-tab02').addClass('on')
+  })
+}
+
+// modalshow
+function modalshow(){
+  $('.request .modal-show').on('click',function(){
+    $('.sub-notice .modal').addClass('show')
+    $('.sub-notice .modal-backdrop').addClass('show')
+    $('body').addClass('hidden')
+  })
+}
+
+// modalclose
+function modalclose(){
+  $('.modal-btn .modal-close').on('click',function(){
+    $('.sub-notice .modal').removeClass('show')
+    $('.sub-notice .modal-backdrop').removeClass('show')
+    $('body').removeClass('hidden')
   })
 }
