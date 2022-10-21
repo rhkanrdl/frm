@@ -2320,9 +2320,10 @@ body {
               align-items: center;
               justify-content: space-around;
               color: rgba(255, 255, 255, 0.57);
-              font-size: 18px;
+              font-size: 12px;
               @media (min-width: $screen-size-pc) {
                 justify-content: flex-start;
+                font-size: 18px;
               }
               input[type="radio"]{
                 display: none;

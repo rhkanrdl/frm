@@ -4608,7 +4608,7 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.weat
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: rgba(255, 255, 255, 0.57);
-  font-size: 18px;
+  font-size: 12px;
 }
 
 @media (min-width: 1200px) {
@@ -4616,6 +4616,7 @@ body div#content.sub section.sub-contents div.container div.sub-weather div.weat
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    font-size: 18px;
   }
 }
 
