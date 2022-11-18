@@ -289,14 +289,15 @@ button {
 
 			button {
 				position: absolute;
-				right: 20px;
-				bottom: 10;
+				right: 10px;
+				top: 20px;
 				border: none;
 				background: transparent;
-				width: 22px;
-				height: 22px;
 				font-size: 0;
-				background: url("../images/icon-close.svg") no-repeat center / 100% auto;
+
+				i {
+					font-size:28px;
+				}
 			}
 		}
 
@@ -768,6 +769,19 @@ button {
 					width: calc(100% - 130px);
 				}
 			}
+		}
+
+		dl {
+			dt {
+				width:100px;
+				float:left;
+				font-weight:600;
+			}
+
+			dd {
+				margin:0 0 10px 100px;
+			}
+
 		}
 	}
 }
